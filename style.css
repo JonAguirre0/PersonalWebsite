@@ -1,0 +1,603 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
+:root {
+    --text-color: black;
+    --bkg-color: white;
+    --font1: "Electrolize";
+    --font2: "Orbitron";
+    --darkModeText: white;
+    --darkModeBckg: black;
+    --darkModeOutLine: white;
+    --darkMode-box-shadow: 0 0 20px 7px rgba(0,0,0,0.6);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font1);
+    margin: 0;
+    background-color: var(--bkg-color);
+}
+body.dark-theme {
+    --text-color: white;
+    --bkg-color: black;
+    --darkModeText: black;
+    --darkModeBckg: rgb(219, 224, 113);
+    --darkModeOutLine: rgb(184, 189, 111);
+    --darkMode-box-shadow: 0 0 20px 7px rgba(255,255,100,0.6);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(70px);
+    color: var(--text-color);
+    width: 100%;
+    height: 3.5rem;
+    padding: 0 3vw;
+    min-width: 320px;
+    max-width: 100%;
+    z-index: 100;
+}
+.nav h1 {
+    /* margin-left: 15px; */
+    /* margin-left: 3vw; */
+    flex-grow: 1;
+}
+.nav .darkmode {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 1.8rem;
+    font-family: var(--font1);
+    font-size: 1.1rem;
+    color: var(--darkModeText);
+    border-radius: 70px;
+    border: none;
+    border-color: var(--darkModeOutLine);
+    border-width: .3rem;
+    background-color: var(--darkModeBckg);
+    box-shadow: var(--darkMode-box-shadow);
+    outline: none;
+    cursor: pointer;
+    z-index: 100;
+}
+.nav .darkmode:active {
+    transform: scale(0.9);
+}
+.nav .menu {
+    max-width: 20vw;
+    width: 100%;
+    margin-right: auto;
+}
+.nav .menu .list {
+    display: flex;
+    gap: 10%;
+    font-size: 1.3rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none; 
+    -ms-user-select: none;
+    
+}
+.nav .menu .list .home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.nav .menu .list .resume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav .menu .list .projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav .menu .list .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav .menu .list .home:active {
+    transform: scale(0.9);
+}
+.nav .menu .list .resume:active {
+    transform: scale(0.9);
+}
+.nav .menu .list .projects:active {
+    transform: scale(0.9);
+}
+.nav .menu .list .about:active {
+    transform: scale(0.9);
+}
+
+.sections .homeSection {
+    width: 100%;
+    height: 100vh;
+    margin-top: 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    font-size: 2rem;
+    padding: 0 8rem;
+    overflow: hidden;
+    background: center/contain repeat rgb(28, 66, 132) url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdm5ndGdsbHpzcW5tcnNpbWZqd2E0a3FvczF3OXNmMG81ZHVwaHFkbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8w61HSu6xQjoa2NzKN/giphy.gif);
+    /* background: center/50% no-repeat url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXV1eDFnZmNmeGpiNHd3bHl0M3hxbjJjOTdzZDA5NnZqcGRnMWdnbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WFjcyy95rUXPXo1k43/giphy.gif); */
+    /* background: center/50% no-repeat url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnVrZmpsMDcwMHBwbTEyYnB1bTdnZndkOHBvbnZ4ZW9zMDIzdGVlNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8mz9YJidZMGXndg6eH/giphy.gif); */
+    /* background: center/90% no-repeat url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2VlMWpxMDlzaWxlcXpocnRqdnFjYzA4NHVyZ2N6em8zZm5ydmE2biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oKIPeK7hRcDBwVFJu/giphy.gif); */
+    /* background: center/50% no-repeat url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDZrdnk1Y3NkM2hycmVqZTBnMjd1aHZoMzZ1N29pcGtwcGQ1ZW1oYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qBJkWD0PtAEdJPp7Xy/giphy.gif); */
+    /* background: left/50% no-repeat url(), right/50% no-repeat url(); */
+}
+/* .sections .background {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: no-repeat url(https://i.gifer.com/7JY7.gif);
+   
+} */
+.sections .resumeSection {
+    /* background-color: red; */
+    width: 100%;
+    height: 100vh;
+    margin-top: 0rem;
+    overflow: hidden;
+}
+.sections .projectsSection {
+    /* background-color: greenyellow; */
+    width: 100%;
+    height: 140vh;
+    margin-top: 0rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 20rem;
+}
+.sections .projectsSection .project1 {
+    display: flex;
+    position: relative;
+    /* margin-left: 2rem; */
+    margin: 0 20rem 0 20rem;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+/* .sections .projectsSection .project1 .image1{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 1100px;
+    margin-bottom: -4rem;
+} */
+.sections .projectsSection .project1 .vid1 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+}
+.sections .projectsSection .project1 .vid2 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+}
+.sections .projectsSection .project1 .vid3 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+}
+.sections .projectsSection .links {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 19rem;
+}
+.sections .projectsSection .links .githubImg2 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    cursor: pointer;
+}
+.sections .projectsSection .links .githubImg2:hover{
+    transform: scale(1.2);
+}
+.sections .projectsSection .links .githubImg2:active {
+    transform: scale(0.9);
+}
+.sections .aboutSection {
+    /* background-color: orange; */
+    width: 100%;
+    height: 100vh;
+    margin-top: 0rem;
+    overflow: hidden;
+}
+.sections h1 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 1.3rem 0;
+    font-family: var(--font2);
+    font-size: 3rem;
+    color: var(--text-color);
+}
+.sections .homeSection .homeTitle {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 12rem;
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 9rem;
+}
+.sections .homeSection .homeTitle2 {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 19rem;
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 9rem;
+}
+.sections .homeSection .links {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-left: 11rem;
+}
+.sections .homeSection .links .githubImg {
+    /* display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center; */
+    width: 7rem;
+    cursor: pointer;
+}
+.sections .homeSection .links .githubImg:hover{
+    transform: scale(1.2);
+}
+.sections .homeSection .links .emailLink {
+    /* display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center; */
+    font-size: 40px;
+    margin: 0 1rem;
+    background: transparent;
+    cursor: pointer;
+}
+.sections .homeSection .links .emailLink:hover {
+    transform: scale(1.2);
+}
+.sections .homeSection .homeText {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    font-size: 2rem;
+    padding: 1rem 8rem;
+    /* margin: 0 20rem 0 20rem; */
+    flex-wrap: wrap;
+}
+.sections .resumeText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    font-size: 2rem;
+    padding: 15rem 8rem;
+    margin: 0 20rem 0 20rem;
+    flex-wrap: wrap;
+}
+.sections .projectsText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    font-size: 2rem;
+    padding: 5rem 8rem;
+    margin: 0 20rem 0 20rem;
+    flex-wrap: wrap;
+}
+.sections .aboutText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    font-size: 2rem;
+    padding: 15rem 8rem;
+    margin: 0 20rem 0 20rem;
+    flex-wrap: wrap;
+}
+.sections .resumeLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 100;
+}
+
+
+
+
+
+@media (max-width: 1920px) {
+    .sections .homeSection .links {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        top: 9rem;
+    }
+    .sections .homeSection .links .githubImg {
+        width: 7rem;
+        cursor: pointer;
+    }
+    .sections .homeSection .links .githubImg:hover{
+        transform: scale(1.2);
+    }
+    .sections .homeSection .links .emailLink {
+        font-size: 40px;
+        margin: 0 1rem;
+        background: transparent;
+        cursor: pointer;
+    }
+
+
+    .sections .projectsSection {
+        width: 100%;
+        height: 140vh;
+        margin-top: 0rem;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        min-height: 20rem;
+    }
+    .sections .projectsSection .project1 {
+        display: flex;
+        position: relative;
+        margin: 0 20rem 0 20rem;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+    .sections .projectsSection .project1 .vid1 {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        width: 600px;
+    }
+    .sections .projectsSection .project1 .vid2 {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        width: 600px;
+    }
+    .sections .projectsSection .project1 .vid3 {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        width: 600px;
+    }
+    .sections .projectsSection .links {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+    .sections .projectsSection .links .githubImg {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        width: 7rem;
+        cursor: pointer;
+    }
+
+
+    .sections .aboutSection {
+        width: 100%;
+        height: 100vh;
+        margin-top: 0rem;
+        overflow: hidden;
+    }
+    .sections .aboutText {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-color);
+        font-size: 2rem;
+        margin: -3rem 10rem 0 10rem;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1400px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        height: 7%;
+    }
+    .nav h1 {
+        display: flex;
+        position: relative;
+        bottom: 1rem;
+        right: 33rem;
+    }   
+    .nav .menu {
+        width: 100%;
+        justify-content: center;
+        position: relative;
+        bottom: 7rem;
+        left: 55rem;
+    }
+    .nav .menu .list {
+        gap: 15%;
+        bottom: 0rem;
+    }
+    .nav .darkmode {
+        display: flex;
+        position: relative;
+        right: 19rem;
+        bottom: 0rem;
+    }
+    .sections .projectsSection {
+        width: 100%;
+        height: 100vh;
+        margin-top: 0rem;
+        overflow: hidden;
+    } 
+    .sections .projectsText {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-color);
+        font-size: 2rem;
+        margin: 0 6rem 0 6rem;
+        flex-wrap: wrap;
+    }
+    .sections .projectsSection .project1 {
+        display: flex;
+        position: relative;
+        bottom: 8rem;
+        padding-top: 2rem;
+    
+    }
+    .sections .projectsSection .project1 {
+        display: flex;
+        position: relative;
+        margin: 0 10rem 0 10rem;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+    .sections .projectsSection .project1 .vid1 {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        width: 320px;
+    }
+    .sections .projectsSection .project1 .vid2 {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        width: 320px;
+    }
+    .sections .projectsSection .project1 .vid3 {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        width: 320px;
+    }
+    .sections .projectsSection .links {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        margin-top: -3rem;
+    }
+    .sections .projectsSection .links .githubImg {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        width: 5rem;
+        cursor: pointer;
+    }  
+    .nav .darkmode {
+        display: flex;
+        position: relative;
+        margin-left: 60rem;
+        bottom: 4rem;
+    }
+    .sections .homeText {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        bottom: 3rem;
+    }
+    .sections .projectsText {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        bottom: 3rem;
+    }
+    .sections .aboutText {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        margin: 0rem 5rem 0 5rem;
+        bottom: 13rem;
+    }
+    .sections .resumeLink {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-color);
+        font-size: 2rem;
+        bottom: 14rem;
+    }
+
+
+    .sections .homeSection .homeTitle {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        top: 1rem;
+        font-size: 60px;
+        font-weight: bold;
+        margin-top: 9rem;
+    }
+    .sections .homeSection .homeTitle2 {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        top: 8rem;
+        font-size: 60px;
+        font-weight: bold;
+        margin-top: 9rem;
+    }
+    .sections .homeSection .links {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        top: 5rem;
+        left: 7rem;
+        margin: 0;
+    }
+}
