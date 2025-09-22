@@ -160,6 +160,42 @@ body.dark-theme {
     flex-wrap: wrap;
     gap: 3rem;
 }
+/* .sections .projectsSection .project1 .imgTest {
+    width: 700px;
+    border-radius: 20px;
+} */
+.sections .projectsSection .project1 .imgTest {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    border-radius: 20px;
+}
+.sections .projectsSection .project1 .p1Text{
+    display: flex;
+    position: relative;
+    top: 26rem;
+    right: 31rem;
+    font-size: 20px;
+}
+.sections .projectsSection .project2 .imgTest2 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    left: 75rem;
+    bottom: 25.7rem;
+    border-radius: 20px;
+}
+.sections .projectsSection .project2 .p2Text{
+    display: flex;
+    position: relative;
+    bottom: 25.5rem;
+    left: 97rem;
+    font-size: 20px;
+}
 .sections .projectsSection .project1 .vid1 {
     display: flex;
     position: relative;
@@ -468,6 +504,39 @@ body.dark-theme {
         flex-wrap: wrap;
         gap: 3rem;
     }
+    .sections .projectsSection .project1 .imgTest {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        bottom: 2rem;
+        border-radius: 10px;
+    }
+    .sections .projectsSection .project1 .p1Text{
+        display: flex;
+        position: relative;
+        top: 11rem;
+        right: 18rem;
+        font-size: 20px;
+    }
+    .sections .projectsSection .project2 .imgTest2 {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        left: 38rem;
+        bottom: 23rem;
+        border-radius: 10px;
+    }
+    .sections .projectsSection .project2 .p2Text{
+        display: flex;
+        position: relative;
+        bottom: 22.8rem;
+        left: 48rem;
+        font-size: 20px;
+    }
     .sections .projectsSection .project1 .vid1 {
         display: flex;
         position: relative;
@@ -495,6 +564,7 @@ body.dark-theme {
         align-items: center;
         justify-content: center;
         margin-top: -3rem;
+        bottom: 20rem;
     }
     .sections .projectsSection .links .githubImg {
         display: flex;
@@ -520,7 +590,8 @@ body.dark-theme {
         display: flex;
         flex-wrap: wrap;
         position: relative;
-        bottom: 3rem;
+        bottom: 5rem;
+        font-size: 25px;
     }
     .sections .aboutText {
         display: flex;
