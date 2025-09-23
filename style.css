@@ -7,6 +7,7 @@
     /* --bkg-color: white; */
     --bkg-color: #f6f5f0;
     --bkg-color2: black;
+    --bkg-color3: #DDDCD8;
     --font1: "Electrolize";
     --font2: "Orbitron";
     --darkModeText: white;
@@ -246,25 +247,58 @@ body.dark-theme {
     /* margin-top: 19rem; */
     margin-top: 51rem;
 }
+.sections .projectsSection .links .githubBtn {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+    /* width: 10rem; */
+    /* height: 2rem; */
+    width: 19rem;
+    height: 4rem;
+    font-size: 22px;
+    font-family: inherit;
+    font-weight: bold;
+    color: var(--text-color);
+    background-color: var(--bkg-color3);
+    top: rem;
+    cursor: pointer;
+}
+.sections .projectsSection .links .githubBtn:hover{
+    transform: scale(1.2);
+}
+.sections .projectsSection .links .githubBtn:active {
+    transform: scale(0.9);
+}
+/* .sections .projectsSection .links .githubBtn i{
+    margin-left: 1rem;
+    font-size: 22px;
+} */
 .sections .projectsSection .links .githubImg2 {
     display: flex;
     position: relative;
     align-items: center;
     justify-content: center;
-    width: 7rem;
-    cursor: pointer;
+    width: 5rem;
+    /* cursor: pointer; */
+    z-index: 100;
 }
-.sections .projectsSection .links .githubImg2:hover{
+/* .sections .projectsSection .links .githubImg2:hover{
     transform: scale(1.2);
 }
 .sections .projectsSection .links .githubImg2:active {
     transform: scale(0.9);
-}
+} */
 .sections .aboutSection {
     width: 100%;
     height: 100vh;
     margin-top: 0rem;
     overflow: hidden;
+    /* background-image: url("./images/image7.jpg");
+    background-size: 104%;
+    background-repeat: no-repeat; */
 }
 .sections h1 {
     display: flex;

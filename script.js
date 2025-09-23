@@ -5,6 +5,7 @@ const about = document.getElementById('about')
 const darkMode = document.getElementById('darkmode')
 const githubImg = document.querySelector('.githubImg')
 const githubImg2 = document.querySelector('.githubImg2')
+const githubBtn = document.querySelector('.githubBtn')
 const video1 = document.querySelector('.vid1')
 
 home.addEventListener('click', () => {
@@ -38,4 +39,8 @@ darkMode.addEventListener('click', () => {
         githubImg.style.filter = 'invert(0)'
         githubImg2.style.filter = 'invert(0)'
     }
+})
+
+githubBtn.addEventListener('click', () => {
+    window.open('https://github.com/JonAguirre0', '_blank')
 })
