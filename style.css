@@ -50,7 +50,7 @@ body.dark-theme {
     width: 100%;
     height: 3.5rem;
     padding: 0 3vw;
-    min-width: 320px;
+    min-width: 20rem;
     max-width: 100%;
     z-index: 100;
 }
@@ -365,8 +365,8 @@ body.dark-theme {
     top: 30rem;
     left: 4rem;
     background-color: var(--bkg-color2);
-    width: 700px;
-    height: 460px;
+    width: 43.75rem;
+    height: 28.75rem;
     margin: 1rem;
     margin-left: 5rem;
     border-radius: 15px;
@@ -374,11 +374,11 @@ body.dark-theme {
     transition: height 0.3s ease;
 }
 .card:hover{
-    height: 610px;
+    height: 38.125rem;
 }
 .card .img1 {
     width: 100%;
-    height: 400px;
+    height: 25rem;
     transition: transform 0.3s ease;
 }
 .card .img1:hover {
@@ -394,7 +394,7 @@ body.dark-theme {
 }
 .card .githubImg {
     position: relative;
-    width: 80px;
+    width: 5rem;
     bottom: 2.6rem;
     left: 38.4rem;
     filter: var(--githubImg1)
@@ -414,8 +414,8 @@ body.dark-theme {
     top: 30rem;
     left: 53rem;
     background-color: var(--bkg-color2);
-    width: 700px;
-    height: 460px;
+    width: 43.75rem;
+    height: 28.75rem;
     margin: 1rem;
     margin-left: 5rem;
     border-radius: 15px;
@@ -423,11 +423,11 @@ body.dark-theme {
     transition: height 0.3s ease;
 }
 .card2:hover{
-    height: 610px;
+    height: 38.125rem;
 }
 .card2 .img2 {
     width: 100%;
-    height: 400px;
+    height: 25rem;
     transition: transform 0.3s ease;
 }
 .card2 .img2:hover {
@@ -452,7 +452,7 @@ body.dark-theme {
 }
 .card2 .githubImg {
     position: relative;
-    width: 80px;
+    width: 5rem;
     bottom: 2.6rem;
     left: 38.4rem;
     filter: var(--githubImg1);
@@ -463,8 +463,8 @@ body.dark-theme {
     top: 30rem;
     left: 102rem;
     background-color: var(--bkg-color2);
-    width: 700px;
-    height: 460px;
+    width: 43.75rem;
+    height: 28.75rem;
     margin: 1rem;
     margin-left: 5rem;
     border-radius: 15px;
@@ -472,11 +472,11 @@ body.dark-theme {
     transition: height 0.3s ease;
 }
 .card3:hover{
-    height: 610px;
+    height: 38.125rem;
 }
 .card3 .img3 {
     width: 100%;
-    height: 400px;
+    height: 25rem;
     transition: transform 0.3s ease;
 }
 .card3 .img3:hover {
@@ -492,7 +492,7 @@ body.dark-theme {
 }
 .card3 .githubImg {
     position: relative;
-    width: 80px;
+    width: 5rem;
     bottom: 2.6rem;
     left: 38.4rem;
     filter: var(--githubImg1)
