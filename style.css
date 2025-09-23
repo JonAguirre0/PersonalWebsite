@@ -3,13 +3,18 @@
 
 :root {
     --text-color: black;
+    --text-color2: white;
     --bkg-color: white;
+    --bkg-color2: black;
     --font1: "Electrolize";
     --font2: "Orbitron";
     --darkModeText: white;
     --darkModeBckg: black;
     --darkModeOutLine: white;
     --darkMode-box-shadow: 0 0 20px 7px rgba(0,0,0,0.6);
+    --githubImg1: invert(1);
+    /* --boxshadow: 0 4px 10px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    --boxshadow: 0px 5px 10px 2px rgba(0,0,0,0.5);
 }
 
 *{
@@ -23,11 +28,16 @@ body {
 }
 body.dark-theme {
     --text-color: white;
+    --text-color2: black;
     --bkg-color: black;
+    --bkg-color2: white;
     --darkModeText: black;
     --darkModeBckg: rgb(219, 224, 113);
     --darkModeOutLine: rgb(184, 189, 111);
     --darkMode-box-shadow: 0 0 20px 7px rgba(255,255,100,0.6);
+    --githubImg1: invert(0);
+    /* --boxshadow: 0 4px 10px 2px rgba(255,255,255, 0.2), 0 6px 20px 0 rgba(255,255,255, 0.19); */
+    --boxshadow: 0px 5px 10px 2px rgba(255,255,255,0.5);
 }
 
 .nav {
@@ -222,7 +232,8 @@ body.dark-theme {
     position: relative;
     align-items: center;
     justify-content: center;
-    margin-top: 19rem;
+    /* margin-top: 19rem; */
+    margin-top: 51rem;
 }
 .sections .projectsSection .links .githubImg2 {
     display: flex;
@@ -345,6 +356,152 @@ body.dark-theme {
     font-size: 2rem;
     cursor: pointer;
     z-index: 100;
+}
+
+
+.card {
+    position: absolute;
+    overflow: hidden;
+    top: 30rem;
+    left: 4rem;
+    background-color: var(--bkg-color2);
+    width: 700px;
+    height: 460px;
+    margin: 1rem;
+    margin-left: 5rem;
+    border-radius: 15px;
+    box-shadow: var(--boxshadow);
+}
+.card:hover{
+    height: 610px;
+}
+.card .img1 {
+    width: 100%;
+    height: 400px;
+    transition: transform 0.3s ease;
+}
+.card .img1:hover {
+    transform: scale(1.03);
+}
+.card .description {
+    position: relative;
+    font-size: 22px;
+    margin: 2rem;
+    margin-bottom: 0rem;
+    bottom: 1.5rem;
+    color: var(--text-color2);
+}
+.card .githubImg {
+    position: relative;
+    width: 80px;
+    bottom: 2.6rem;
+    left: 38.4rem;
+    filter: var(--githubImg1)
+}
+.card h3 {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    left: 2rem;
+    bottom: 1rem;
+    color: var(--text-color2);
+}
+.card2 {
+    position: absolute;
+    overflow: hidden;
+    top: 30rem;
+    left: 53rem;
+    background-color: var(--bkg-color2);
+    width: 700px;
+    height: 460px;
+    margin: 1rem;
+    margin-left: 5rem;
+    border-radius: 15px;
+    box-shadow: var(--boxshadow);
+}
+.card2:hover{
+    height: 610px;
+}
+.card2 .img2 {
+    width: 100%;
+    height: 400px;
+    transition: transform 0.3s ease;
+}
+.card2 .img2:hover {
+    transform: scale(1.03);
+}
+.card2 .description {
+    position: relative;
+    font-size: 22px;
+    margin: 2rem;
+    margin-bottom: 0rem;
+    bottom: 1.5rem;
+    color: var(--text-color2);
+}
+.card2 h3 {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    left: 2rem;
+    bottom: 1rem;
+    color: var(--text-color2);
+}
+.card2 .githubImg {
+    position: relative;
+    width: 80px;
+    bottom: 2.6rem;
+    left: 38.4rem;
+    filter: var(--githubImg1);
+}
+.card3 {
+    position: absolute;
+    overflow: hidden;
+    top: 30rem;
+    left: 102rem;
+    background-color: var(--bkg-color2);
+    width: 700px;
+    height: 460px;
+    margin: 1rem;
+    margin-left: 5rem;
+    border-radius: 15px;
+    box-shadow: var(--boxshadow);
+}
+.card3:hover{
+    height: 610px;
+}
+.card3 .img3 {
+    width: 100%;
+    height: 400px;
+    transition: transform 0.3s ease;
+}
+.card3 .img3:hover {
+    transform: scale(1.03);
+}
+.card3 .description {
+    position: relative;
+    font-size: 22px;
+    margin: 2rem;
+    margin-bottom: 0rem;
+    bottom: 1.5rem;
+    color: var(--text-color2);
+}
+.card3 .githubImg {
+    position: relative;
+    width: 80px;
+    bottom: 2.6rem;
+    left: 38.4rem;
+    filter: var(--githubImg1)
+}
+.card3 h3 {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    left: 2rem;
+    bottom: 1rem;
+    color: var(--text-color2);
 }
 
 
@@ -477,7 +634,7 @@ body.dark-theme {
     }
     .sections .projectsSection {
         width: 100%;
-        height: 100vh;
+        height: 130vh;
         margin-top: 0rem;
         overflow: hidden;
     } 
@@ -564,7 +721,7 @@ body.dark-theme {
         align-items: center;
         justify-content: center;
         margin-top: -3rem;
-        bottom: 20rem;
+        top: 22rem;
     }
     .sections .projectsSection .links .githubImg {
         display: flex;
@@ -639,5 +796,147 @@ body.dark-theme {
         top: 5rem;
         left: 7rem;
         margin: 0;
+    }
+
+    
+
+
+    .card {
+        position: absolute;
+        overflow: hidden;
+        top: 19rem;
+        left: 0rem;
+        background-color: var(--bkg-color2);
+        width: 400px;
+        height: 250px;
+        margin: 1rem;
+        margin-left: 5rem;
+        border-radius: 15px;
+        box-shadow: var(--boxshadow);
+    }
+    .card:hover{
+        height: 420px;
+    }
+    .card .img1 {
+        width: 100%;
+        height: 200px;
+        transition: transform 0.3s ease;
+    }
+    .card .description {
+        position: relative;
+        font-size: 16px;
+        margin: 2rem;
+        margin-bottom: 0rem;
+        bottom: 1.5rem;
+        color: var(--text-color2);
+    }
+    .card .githubImg {
+        position: relative;
+        width: 80px;
+        bottom: 1rem;
+        left: 20rem;
+        filter: var(--githubImg1)
+    }
+    .card h3 {
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        left: 2rem;
+        bottom: .5rem;
+        color: var(--text-color2);
+    }
+    .card2 {
+        position: absolute;
+        overflow: hidden;
+        top: 19rem;
+        left: 27rem;
+        background-color: var(--bkg-color2);
+        width: 400px;
+        height: 250px;
+        margin: 1rem;
+        margin-left: 5rem;
+        border-radius: 15px;
+        box-shadow: var(--boxshadow);
+    }
+    .card2:hover{
+        height: 420px;
+    }
+    .card2 .img2 {
+        width: 100%;
+        height: 200px;
+        transition: transform 0.3s ease;
+    }
+    .card2 .img2:hover {
+        transform: scale(1.03);
+    }
+    .card2 .description {
+        position: relative;
+        font-size: 16px;
+        margin: 2rem;
+        margin-bottom: 0rem;
+        bottom: 1.5rem;
+        color: var(--text-color2);
+    }
+    .card2 h3 {
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        left: 2rem;
+        bottom: .5rem;
+        color: var(--text-color2);
+    }
+    .card2 .githubImg {
+        position: relative;
+        width: 80px;
+        bottom: 1rem;
+        left: 20rem;
+        filter: var(--githubImg1);
+    }
+    .card3 {
+        position: absolute;
+        overflow: hidden;
+        top: 19rem;
+        left: 54rem;
+        background-color: var(--bkg-color2);
+        width: 400px;
+        height: 250px;
+        margin: 1rem;
+        margin-left: 5rem;
+        border-radius: 15px;
+        box-shadow: var(--boxshadow);
+    }
+    .card3:hover{
+        height: 420px;
+    }
+    .card3 .img3 {
+        width: 100%;
+        height: 200px;
+        transition: transform 0.3s ease;
+    }
+    .card3 .description {
+        position: relative;
+        font-size: 16px;
+        margin: 2rem;
+        margin-bottom: 0rem;
+        bottom: 1.5rem;
+        color: var(--text-color2);
+    }
+    .card3 .githubImg {
+        position: relative;
+        width: 80px;
+        bottom: 1rem;
+        left: 20rem;
+        filter: var(--githubImg1)
+    }
+    .card3 h3 {
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        left: 2rem;
+        bottom: 0.5rem;
+        color: var(--text-color2);
     }
 }
