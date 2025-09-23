@@ -371,6 +371,7 @@ body.dark-theme {
     margin-left: 5rem;
     border-radius: 15px;
     box-shadow: var(--boxshadow);
+    transition: height 0.3s ease;
 }
 .card:hover{
     height: 610px;
@@ -419,6 +420,7 @@ body.dark-theme {
     margin-left: 5rem;
     border-radius: 15px;
     box-shadow: var(--boxshadow);
+    transition: height 0.3s ease;
 }
 .card2:hover{
     height: 610px;
@@ -467,6 +469,7 @@ body.dark-theme {
     margin-left: 5rem;
     border-radius: 15px;
     box-shadow: var(--boxshadow);
+    transition: height 0.3s ease;
 }
 .card3:hover{
     height: 610px;
@@ -813,6 +816,7 @@ body.dark-theme {
         margin-left: 5rem;
         border-radius: 15px;
         box-shadow: var(--boxshadow);
+        transition: height 0.3s ease;
     }
     .card:hover{
         height: 420px;
@@ -858,6 +862,7 @@ body.dark-theme {
         margin-left: 5rem;
         border-radius: 15px;
         box-shadow: var(--boxshadow);
+        transition: height 0.3s ease;
     }
     .card2:hover{
         height: 420px;
@@ -906,6 +911,7 @@ body.dark-theme {
         margin-left: 5rem;
         border-radius: 15px;
         box-shadow: var(--boxshadow);
+        transition: height 0.3s ease;
     }
     .card3:hover{
         height: 420px;
