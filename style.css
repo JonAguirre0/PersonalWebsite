@@ -254,6 +254,7 @@ body.dark-theme {
     justify-content: center;
     border-radius: 10px;
     border: none;
+    box-shadow: var(--boxshadow);
     /* width: 10rem; */
     /* height: 2rem; */
     width: 19rem;
@@ -261,7 +262,7 @@ body.dark-theme {
     font-size: 22px;
     font-family: inherit;
     font-weight: bold;
-    color: var(--text-color);
+    color: black;
     background-color: var(--bkg-color3);
     top: rem;
     cursor: pointer;
@@ -284,6 +285,7 @@ body.dark-theme {
     width: 5rem;
     /* cursor: pointer; */
     z-index: 100;
+    filter: invert(0);
 }
 /* .sections .projectsSection .links .githubImg2:hover{
     transform: scale(1.2);
@@ -397,10 +399,45 @@ body.dark-theme {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     color: var(--text-color);
     font-size: 2rem;
+    /* top: 21rem; */
+    bottom: 5rem;
     cursor: pointer;
     z-index: 100;
+    gap: 1rem;
+}
+.sections .resumeLink .resumeBtn {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    /* width: 12rem; */
+    width: 16rem;
+    height: 2.2rem;
+    font-family: inherit;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    box-shadow: var(--boxshadow);
+    background-color: var(--bkg-color3);
+    gap: 1rem;
+    cursor: pointer;
+}
+.sections .resumeLink .resumeBtn i {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.sections .resumeLink .resumeBtn:hover {
+    transform: scale(1.1);
+}
+.sections .resumeLink .resumeBtn:active {
+    transform: scale(0.9);
 }
 
 
@@ -443,6 +480,12 @@ body.dark-theme {
     bottom: 2.6rem;
     left: 38.4rem;
     filter: var(--githubImg1)
+}
+.card .githubImg:hover{
+    transform: scale(1.2);
+}
+.card .githubImg:active {
+    transform: scale(0.9);
 }
 .card h3 {
     position: relative;
@@ -502,6 +545,12 @@ body.dark-theme {
     left: 38.4rem;
     filter: var(--githubImg1);
 }
+.card2 .githubImg:hover{
+    transform: scale(1.2);
+}
+.card2 .githubImg:active {
+    transform: scale(0.9);
+}
 .card3 {
     position: absolute;
     overflow: hidden;
@@ -541,6 +590,12 @@ body.dark-theme {
     bottom: 2.6rem;
     left: 38.4rem;
     filter: var(--githubImg1)
+}
+.card3 .githubImg:hover{
+    transform: scale(1.2);
+}
+.card3 .githubImg:active {
+    transform: scale(0.9);
 }
 .card3 h3 {
     position: relative;
