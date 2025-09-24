@@ -1,5 +1,5 @@
 const home = document.getElementById('home')
-const resume = document.getElementById('resume')
+const skills = document.getElementById('skills')
 const projects = document.getElementById('projects')
 const about = document.getElementById('about')
 const darkMode = document.getElementById('darkmode')
@@ -14,9 +14,9 @@ home.addEventListener('click', () => {
     document.getElementById('homeSection').scrollIntoView({behavior: 'smooth'})
 })
 
-resume.addEventListener('click', () => {
-    console.log('Resume Clicked')
-    document.getElementById('resumeSection').scrollIntoView({behavior: 'smooth'})
+skills.addEventListener('click', () => {
+    console.log('Skills Clicked')
+    document.getElementById('skillsSection').scrollIntoView({behavior: 'smooth'})
 })
 
 projects.addEventListener('click', () => {
