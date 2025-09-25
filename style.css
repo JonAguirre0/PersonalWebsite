@@ -46,6 +46,19 @@ body.dark-theme {
     --boxshadow: 0px 5px 10px 2px rgba(255,255,255,0.5);
 }
 
+
+/* 
+
+
+
+
+    NAV CSS Portion
+
+
+
+
+*/
+
 .nav {
     display: flex;
     align-items: center;
@@ -183,6 +196,32 @@ body.dark-theme {
     width: 5rem;
 }
 
+
+
+
+/* 
+
+
+
+
+   Home Section CSS Portion
+
+
+
+
+*/
+
+
+.sections h1 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 1.3rem 0;
+    font-family: var(--font2);
+    font-size: 3rem;
+    color: var(--text-color);
+}
 .sections .homeSection {
     width: 100%;
     height: 100vh;
@@ -202,10 +241,72 @@ body.dark-theme {
     /* background: center/50% no-repeat url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDZrdnk1Y3NkM2hycmVqZTBnMjd1aHZoMzZ1N29pcGtwcGQ1ZW1oYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qBJkWD0PtAEdJPp7Xy/giphy.gif); */
     /* background: left/50% no-repeat url(), right/50% no-repeat url(); */
 }
+.sections .homeSection .homeTitle {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 12rem;
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 9rem;
+}
+.sections .homeSection .homeTitle2 {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 19rem;
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 9rem;
+}
+.sections .homeSection .links {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-left: 11rem;
+}
+.sections .homeSection .links .githubImg {
+    width: 7rem;
+    cursor: pointer;
+}
+.sections .homeSection .links .githubImg:hover{
+    transform: scale(1.2);
+}
+.sections .homeSection .links .emailLink {
+    font-size: 40px;
+    margin: 0 1rem;
+    background: transparent;
+    cursor: pointer;
+}
+.sections .homeSection .links .emailLink:hover {
+    transform: scale(1.2);
+}
+.sections .homeSection .homeText {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    font-size: 2rem;
+    padding: 1rem 8rem;
+    flex-wrap: wrap;
+}
+
+
+/* 
 
 
 
 
+    Skills Sections CSS Portion
+
+
+
+
+*/
 
 .sections .skillsSection {
     width: 100%;
@@ -611,9 +712,29 @@ body.dark-theme {
     right: 0.5rem;
     color: var(--text-color);
 }
+.sections .skillsText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    font-size: 2rem;
+    padding: 15rem 8rem;
+    margin: 0 20rem 0 20rem;
+    flex-wrap: wrap;
+}
+
+
+/* 
 
 
 
+
+    Projects Sections CSS Portion
+
+
+
+
+*/
 
 
 .sections .projectsSection {
@@ -738,94 +859,6 @@ body.dark-theme {
     z-index: 100;
     filter: invert(0);
 }
-/* .sections .projectsSection .links .githubImg2:hover{
-    transform: scale(1.2);
-}
-.sections .projectsSection .links .githubImg2:active {
-    transform: scale(0.9);
-} */
-.sections .aboutSection {
-    width: 100%;
-    height: 100vh;
-    margin-top: 0rem;
-    overflow: hidden;
-    /* background-image: url("./images/image7.jpg");
-    background-size: 104%;
-    background-repeat: no-repeat; */
-}
-.sections h1 {
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    padding: 1.3rem 0;
-    font-family: var(--font2);
-    font-size: 3rem;
-    color: var(--text-color);
-}
-.sections .homeSection .homeTitle {
-    display: flex;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    top: 12rem;
-    font-size: 70px;
-    font-weight: bold;
-    margin-top: 9rem;
-}
-.sections .homeSection .homeTitle2 {
-    display: flex;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    top: 19rem;
-    font-size: 70px;
-    font-weight: bold;
-    margin-top: 9rem;
-}
-.sections .homeSection .links {
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    margin-left: 11rem;
-}
-.sections .homeSection .links .githubImg {
-    width: 7rem;
-    cursor: pointer;
-}
-.sections .homeSection .links .githubImg:hover{
-    transform: scale(1.2);
-}
-.sections .homeSection .links .emailLink {
-    font-size: 40px;
-    margin: 0 1rem;
-    background: transparent;
-    cursor: pointer;
-}
-.sections .homeSection .links .emailLink:hover {
-    transform: scale(1.2);
-}
-.sections .homeSection .homeText {
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-color);
-    font-size: 2rem;
-    padding: 1rem 8rem;
-    flex-wrap: wrap;
-}
-.sections .skillsText {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-color);
-    font-size: 2rem;
-    padding: 15rem 8rem;
-    margin: 0 20rem 0 20rem;
-    flex-wrap: wrap;
-}
 .sections .projectsText {
     display: flex;
     align-items: center;
@@ -836,61 +869,13 @@ body.dark-theme {
     margin: 0 20rem 0 20rem;
     flex-wrap: wrap;
 }
-.sections .aboutText {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-color);
-    font-size: 2rem;
-    padding: 15rem 8rem;
-    margin: 0 20rem 0 20rem;
-    flex-wrap: wrap;
+/* .sections .projectsSection .links .githubImg2:hover{
+    transform: scale(1.2);
 }
-.sections .resumeLink {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    color: var(--text-color);
-    font-size: 2rem;
-    /* top: 21rem; */
-    bottom: 5rem;
-    cursor: pointer;
-    z-index: 100;
-    gap: 1rem;
-}
-.sections .resumeLink .resumeBtn {
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    /* width: 12rem; */
-    width: 16rem;
-    height: 2.2rem;
-    font-family: inherit;
-    font-size: 25px;
-    font-weight: bold;
-    color: black;
-    border-radius: 10px;
-    border: none;
-    box-shadow: var(--boxshadow);
-    background-color: var(--bkg-color3);
-    gap: 1rem;
-    cursor: pointer;
-}
-.sections .resumeLink .resumeBtn i {
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-}
-.sections .resumeLink .resumeBtn:hover {
-    transform: scale(1.1);
-}
-.sections .resumeLink .resumeBtn:active {
+.sections .projectsSection .links .githubImg2:active {
     transform: scale(0.9);
-}
-
+} */
+ 
 
 .card {
     position: absolute;
@@ -1067,6 +1052,97 @@ body.dark-theme {
 }
 
 
+/* 
+
+
+
+
+    About Sections CSS Portion
+
+
+
+
+*/
+
+.sections .aboutSection {
+    width: 100%;
+    height: 100vh;
+    margin-top: 0rem;
+    overflow: hidden;
+    /* background-image: url("./images/image7.jpg");
+    background-size: 104%;
+    background-repeat: no-repeat; */
+}
+.sections .aboutText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    font-size: 2rem;
+    padding: 15rem 8rem;
+    margin: 0 20rem 0 20rem;
+    flex-wrap: wrap;
+}
+.sections .resumeLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: var(--text-color);
+    font-size: 2rem;
+    /* top: 21rem; */
+    bottom: 5rem;
+    cursor: pointer;
+    z-index: 100;
+    gap: 1rem;
+}
+.sections .resumeLink .resumeBtn {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    /* width: 12rem; */
+    width: 16rem;
+    height: 2.2rem;
+    font-family: inherit;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    box-shadow: var(--boxshadow);
+    background-color: var(--bkg-color3);
+    gap: 1rem;
+    cursor: pointer;
+}
+.sections .resumeLink .resumeBtn i {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.sections .resumeLink .resumeBtn:hover {
+    transform: scale(1.1);
+}
+.sections .resumeLink .resumeBtn:active {
+    transform: scale(0.9);
+}
+
+
+
+
+
+/* 
+
+
+
+
+    @Media CSS Portion
+
+
+
+
+*/
 
 
 
