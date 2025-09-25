@@ -144,6 +144,7 @@ body.dark-theme {
     -webkit-user-select: none;
     -moz-user-select: none; 
     -ms-user-select: none;
+    user-select: none;
     /* below is one option */
     /* position: relative;
     right: 35rem; */
@@ -356,6 +357,10 @@ body.dark-theme {
     gap: 5%;
     justify-content: center;
     align-items: center;
+    -webkit-user-select: none;
+    -moz-user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
 }
 .sections .skillsSection .htmlBox {
     display: flex;
@@ -370,8 +375,9 @@ body.dark-theme {
     cursor: pointer;
 }
 .sections .skillsSection .htmlBox:hover {
-    /* transform: scale(1.2); */
-    animation: slide 1.6s ease-in-out;
+    transform: scale(1.2);
+    /* animation: slide 1.6s ease-in-out; */
+    animation: shake .4s ease;
 }
 @keyframes slide {
     0% {
@@ -421,8 +427,9 @@ body.dark-theme {
     z-index: 100;
 }
 .sections .skillsSection .jsBox:hover {
-    /* transform: scale(1.2); */
-    animation: bounce 5s ease-in-out;
+    transform: scale(1.2);
+    /* animation: bounce 5s ease-in-out; */
+    animation: shake .4s ease;
 }
 @keyframes bounce {
     0% {
@@ -471,7 +478,8 @@ body.dark-theme {
 }
 .sections .skillsSection .cssBox:hover {
     transform: scale(1.2);
-    animation: spin 2s linear;
+    /* animation: spin 2s linear; */
+    animation: shake .4s ease;
 }
 @keyframes spin {
     0% {
@@ -522,8 +530,9 @@ body.dark-theme {
     z-index: 100;
 }
 .sections .skillsSection .pythonBox:hover {
-    /* transform: scale(1.2); */
-    animation: slideUp 1s ease;
+    transform: scale(1.2);
+    /* animation: slideUp 1s ease; */
+    animation: shake .4s ease;
 }
 @keyframes slideUp {
     0% {
@@ -569,7 +578,7 @@ body.dark-theme {
     cursor: pointer;
 }
 .sections .skillsSection .cppBox:hover {
-    /* transform: scale(1.2); */
+    transform: scale(1.2);
     animation: shake .4s ease;
 }
 @keyframes shake {
@@ -614,6 +623,7 @@ body.dark-theme {
 }
 .sections .skillsSection .mongoDBBox:hover {
     transform: scale(1.2);
+    animation: shake .4s ease;
 }
 .sections .skillsSection .mongoDBBox .logo {
     width: 2.8rem;
@@ -646,6 +656,7 @@ body.dark-theme {
 }
 .sections .skillsSection .restapiBox:hover {
     transform: scale(1.2);
+    animation: shake .4s ease;
 }
 .sections .skillsSection .restapiBox .logo {
     width: 7rem;
@@ -679,6 +690,7 @@ body.dark-theme {
 }
 .sections .skillsSection .nodejsBox:hover {
     transform: scale(1.2);
+    animation: shake .4s ease;
 }
 .sections .skillsSection .nodejsBox .logo {
     width: 4.3rem;
@@ -711,6 +723,7 @@ body.dark-theme {
 }
 .sections .skillsSection .expressBox:hover {
     transform: scale(1.2);
+    animation: shake .4s ease;
 }
 .sections .skillsSection .expressBox .logo {
     width: 2.7rem;
@@ -879,7 +892,7 @@ body.dark-theme {
 
 .card {
     position: absolute;
-    overflow: visible;
+    overflow: hidden;
     top: 30rem;
     left: 4rem;
     background-color: var(--bkg-color2);
@@ -890,25 +903,29 @@ body.dark-theme {
     border-radius: 15px;
     box-shadow: var(--boxshadow);
     transition: height 0.3s ease;
-    cursor: pointer;
 }
 .card:hover{
     height: 38.125rem;
+}
+.card:active{
+    overflow: visible;
 }
 .card .img1 {
     width: 100%;
     height: 25rem;
     transition: transform 0.3s ease;
     position: relative;
-    z-index: 10;
+    z-index: 100;
+    cursor: pointer;
 }
 .card .img1:hover {
     transform: scale(1.03);
 }
 .card .img1:active {
     transform: scale(2);
-    transform: -50%;
     right: -100%;
+    bottom: 30%;
+    z-index: 101;
 }
 .card .description {
     position: relative;
@@ -923,7 +940,7 @@ body.dark-theme {
     width: 5rem;
     bottom: 2.6rem;
     left: 38.4rem;
-    filter: var(--githubImg1)
+    filter: var(--githubImg1);
 }
 .card .githubImg:hover{
     transform: scale(1.2);
@@ -957,13 +974,24 @@ body.dark-theme {
 .card2:hover{
     height: 38.125rem;
 }
+.card2:active{
+    overflow: visible;
+}
 .card2 .img2 {
     width: 100%;
     height: 25rem;
     transition: transform 0.3s ease;
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
 }
 .card2 .img2:hover {
     transform: scale(1.03);
+}
+.card2 .img2:active {
+    transform: scale(2);
+    bottom: 30%;
+    z-index: 101;
 }
 .card2 .description {
     position: relative;
@@ -1012,13 +1040,25 @@ body.dark-theme {
 .card3:hover{
     height: 38.125rem;
 }
+.card3:active{
+    overflow: visible;
+}
 .card3 .img3 {
     width: 100%;
     height: 25rem;
     transition: transform 0.3s ease;
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
 }
 .card3 .img3:hover {
     transform: scale(1.03);
+}
+.card3 .img3:active {
+    transform: scale(2);
+    left: -100%;
+    bottom: 30%;
+    z-index: 101;
 }
 .card3 .description {
     position: relative;
@@ -1241,6 +1281,13 @@ body.dark-theme {
         margin-top: 3rem;
         top: 23rem;
     }
+    .sections .projectsSection .links .githubBtn {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        top: 0rem;
+    }
     .sections .projectsSection .links .githubImg2 {
         display: flex;
         position: relative;
@@ -1273,7 +1320,7 @@ body.dark-theme {
     .card {
         position: absolute;
         overflow: hidden;
-        top: 25rem;
+        top: 20rem;
         left: 2rem;
         background-color: var(--bkg-color2);
         width: 500px;
@@ -1291,6 +1338,11 @@ body.dark-theme {
         width: 100%;
         height: 300px;
         transition: transform 0.3s ease;
+    }
+    .card .img1:active {
+        transform: scale(2);
+        bottom: 10%;
+        z-index: 101;
     }
     .card .description {
         position: relative;
@@ -1319,7 +1371,7 @@ body.dark-theme {
     .card2 {
         position: absolute;
         overflow: hidden;
-        top: 25rem;
+        top: 20rem;
         left: 40rem;
         background-color: var(--bkg-color2);
         width: 500px;
@@ -1333,6 +1385,9 @@ body.dark-theme {
     .card2:hover{
         height: 470px;
     }
+    .card2:active{
+        overflow: visible;
+    }
     .card2 .img2 {
         width: 100%;
         height: 300px;
@@ -1340,6 +1395,11 @@ body.dark-theme {
     }
     .card2 .img2:hover {
         transform: scale(1.03);
+    }
+    .card2 .img2:active {
+        transform: scale(2);
+        bottom: 10%;
+        z-index: 101;
     }
     .card2 .description {
         position: relative;
@@ -1368,7 +1428,7 @@ body.dark-theme {
     .card3 {
         position: absolute;
         overflow: hidden;
-        top: 25rem;
+        top: 20rem;
         left: 78rem;
         background-color: var(--bkg-color2);
         width: 500px;
@@ -1386,6 +1446,11 @@ body.dark-theme {
         width: 100%;
         height: 300px;
         transition: transform 0.3s ease;
+    }
+    .card3 .img3:active {
+        transform: scale(2);
+        bottom: 10%;
+        z-index: 101;
     }
     .card3 .description {
         position: relative;
@@ -1667,6 +1732,12 @@ body.dark-theme {
         height: 200px;
         transition: transform 0.3s ease;
     }
+    .card .img1:active {
+        transform: scale(2);
+        position: relative;
+        bottom: 20%;
+        z-index: 101;
+    }
     .card .description {
         position: relative;
         font-size: 16px;
@@ -1708,6 +1779,9 @@ body.dark-theme {
     .card2:hover{
         height: 420px;
     }
+    .card2:active{
+        overflow: visible;
+    }
     .card2 .img2 {
         width: 100%;
         height: 200px;
@@ -1715,6 +1789,12 @@ body.dark-theme {
     }
     .card2 .img2:hover {
         transform: scale(1.03);
+    }
+    .card2 .img2:active {
+        transform: scale(2);
+        position: relative;
+        bottom: 20%;
+        z-index: 101;
     }
     .card2 .description {
         position: relative;
@@ -1761,6 +1841,12 @@ body.dark-theme {
         width: 100%;
         height: 200px;
         transition: transform 0.3s ease;
+    }
+    .card3 .img3:active {
+        transform: scale(2);
+        position: relative;
+        bottom: 20%;
+        z-index: 101;
     }
     .card3 .description {
         position: relative;
