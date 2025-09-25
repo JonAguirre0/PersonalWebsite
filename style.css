@@ -198,12 +198,316 @@ body.dark-theme {
     /* background: center/50% no-repeat url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDZrdnk1Y3NkM2hycmVqZTBnMjd1aHZoMzZ1N29pcGtwcGQ1ZW1oYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qBJkWD0PtAEdJPp7Xy/giphy.gif); */
     /* background: left/50% no-repeat url(), right/50% no-repeat url(); */
 }
+
+
+
+
+
 .sections .skillsSection {
     width: 100%;
     height: 100vh;
     margin-top: 0rem;
     overflow: hidden;
 }
+.sections .skillsSection .skillsCard {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+.sections .skillsSection .skillBox {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+    height: 50rem;
+}
+.sections .skillsSection .skillBox .skills {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+}
+.sections .skillsSection .htmlBox {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    width: 14rem;
+    height: 4rem;
+    background-color: aqua;
+    border-radius: 15px;
+    margin: 1rem 0rem;
+}
+.sections .skillsSection .htmlBox:hover {
+    transform: scale(1.2);
+}
+.sections .skillsSection .htmlBox .logo {
+    width: 9rem;
+    display: flex;
+    position: relative;
+    top: 0rem;
+    right: 2.6rem;
+    z-index: 100;
+}
+.sections .skillsSection .htmlBox .html {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    font-size: 22px;
+    right: 3rem;
+}
+.sections .skillsSection .jsBox {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    width: 14rem;
+    height: 4rem;
+    background-color: aqua;
+    border-radius: 15px;
+    margin: 1rem 0rem;
+}
+.sections .skillsSection .jsBox:hover {
+    transform: scale(1.2);
+}
+.sections .skillsSection .jsBox .logo {
+    width: 2.5rem;
+    display: flex;
+    position: relative;
+    top: 0rem;
+    right: 0.5rem;
+    z-index: 100;
+}
+.sections .skillsSection .jsBox .js {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    font-size: 22px;
+    left: 0.5rem;
+}
+.sections .skillsSection .cssBox {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    width: 14rem;
+    height: 4rem;
+    background-color: aqua;
+    border-radius: 15px;
+    margin: 1rem 0rem;
+}
+.sections .skillsSection .cssBox:hover {
+    transform: scale(1.2);
+}
+.sections .skillsSection .cssBox .logo {
+    width: 2.5rem;
+    display: flex;
+    position: relative;
+    top: 0rem;
+    right: 2.5rem;
+    z-index: 100;
+}
+.sections .skillsSection .cssBox .css {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    font-size: 22px;
+    left: 0rem;
+}
+.sections .skillsSection .pythonBox {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    width: 14rem;
+    height: 4rem;
+    background-color: aqua;
+    border-radius: 15px;
+    margin: 1rem 0rem;
+}
+.sections .skillsSection .pythonBox:hover {
+    transform: scale(1.2);
+}
+.sections .skillsSection .pythonBox .logo {
+    width: 2.5rem;
+    display: flex;
+    position: relative;
+    top: 0rem;
+    right: 2rem;
+    z-index: 100;
+}
+.sections .skillsSection .pythonBox .python {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    font-size: 22px;
+    left: 0rem;
+}
+.sections .skillsSection .cppBox {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    width: 14rem;
+    height: 4rem;
+    background-color: aqua;
+    border-radius: 15px;
+    margin: 1rem 0rem;
+}
+.sections .skillsSection .cppBox:hover {
+    transform: scale(1.2);
+}
+.sections .skillsSection .cppBox .logo {
+    width: 2.5rem;
+    display: flex;
+    position: relative;
+    top: 0rem;
+    right: 2.5rem;
+    z-index: 100;
+}
+.sections .skillsSection .cppBox .cpp {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    font-size: 22px;
+    left: 0rem;
+}
+.sections .skillsSection .mongoDBBox {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    width: 14rem;
+    height: 4rem;
+    background-color: aqua;
+    border-radius: 15px;
+    margin: 1rem 0rem;
+}
+.sections .skillsSection .mongoDBBox:hover {
+    transform: scale(1.2);
+}
+.sections .skillsSection .mongoDBBox .logo {
+    width: 2.8rem;
+    display: flex;
+    position: relative;
+    top: 0rem;
+    right: 1rem;
+    z-index: 100;
+}
+.sections .skillsSection .mongoDBBox .mongodb {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    font-size: 22px;
+    left: 0rem;
+}
+.sections .skillsSection .restapiBox {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    width: 14rem;
+    height: 4rem;
+    background-color: aqua;
+    border-radius: 15px;
+    margin: 1rem 0rem;
+}
+.sections .skillsSection .restapiBox:hover {
+    transform: scale(1.2);
+}
+.sections .skillsSection .restapiBox .logo {
+    width: 7rem;
+    display: flex;
+    position: relative;
+    top: 0rem;
+    right: 1.2rem;
+    z-index: 100;
+}
+.sections .skillsSection .restapiBox .restapi {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    font-size: 22px;
+    right: 1.6rem;
+}
+.sections .skillsSection .nodejsBox {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    width: 14rem;
+    height: 4rem;
+    background-color: aqua;
+    border-radius: 15px;
+    margin: 1rem 0rem;
+}
+.sections .skillsSection .nodejsBox:hover {
+    transform: scale(1.2);
+}
+.sections .skillsSection .nodejsBox .logo {
+    width: 4.3rem;
+    display: flex;
+    position: relative;
+    top: 0rem;
+    right: 2.2rem;
+    z-index: 100;
+}
+.sections .skillsSection .nodejsBox .nodejs {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    font-size: 22px;
+    right: 1.6rem;
+}
+.sections .skillsSection .expressBox {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    width: 14rem;
+    height: 4rem;
+    background-color: aqua;
+    border-radius: 15px;
+    margin: 1rem 0rem;
+}
+.sections .skillsSection .expressBox:hover {
+    transform: scale(1.2);
+}
+.sections .skillsSection .expressBox .logo {
+    width: 2.7rem;
+    display: flex;
+    position: relative;
+    top: 0rem;
+    right: 2rem;
+    z-index: 100;
+}
+.sections .skillsSection .expressBox .express {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    font-size: 22px;
+    right: 0.5rem;
+}
+
+
+
+
+
 .sections .projectsSection {
     width: 100%;
     height: 140vh;
