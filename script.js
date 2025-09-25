@@ -32,11 +32,11 @@ about.addEventListener('click', () => {
 darkMode.addEventListener('click', () => {
     document.body.classList.toggle('dark-theme')
     if (document.body.classList.contains('dark-theme')) {
-        darkMode.innerHTML = 'Light Mode'
+        // darkMode.innerHTML = 'Light Mode'
         githubImg.style.filter = 'invert(1)'
         // githubImg2.style.filter = 'invert(1)'
     } else {
-        darkMode.innerHTML = 'Dark Mode'
+        // darkMode.innerHTML = 'Dark Mode'
         githubImg.style.filter = 'invert(0)'
         // githubImg2.style.filter = 'invert(0)'
     }
