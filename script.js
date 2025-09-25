@@ -8,6 +8,10 @@ const githubImg2 = document.querySelector('.githubImg2')
 const githubBtn = document.querySelector('.githubBtn')
 const resumeBtn = document.querySelector('.resumeBtn')
 const video1 = document.querySelector('.vid1')
+const nextBtn = document.querySelector('.next')
+const img1 = document.querySelector('.img1')
+const imgs = document.getElementById('imgs')
+const img = document.querySelectorAll('#imgs img')
 
 home.addEventListener('click', () => {
     console.log('Home Clicked')
@@ -49,3 +53,19 @@ githubBtn.addEventListener('click', () => {
 resumeBtn.addEventListener('click', () => {
     window.open('https://docs.google.com/document/d/1HhKYJfpNmp3MKKt3fLDBxhoFcogyUbv-jtSl79XdjK0/edit?usp=sharing', '_blank')
 })
+
+nextBtn.addEventListener('click', () => {
+    idx++
+    changeImage()
+})
+
+let idx = 0
+function changeImage() {
+    if(idx > img.length - 1) {
+        idx = 0
+    } else if (idx < 0) {
+        idx = img.length -1 
+    }
+
+    imgs.style.transform = `translateX(${-idx * 700}px)`
+}

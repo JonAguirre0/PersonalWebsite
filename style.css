@@ -927,18 +927,42 @@ body.dark-theme {
     bottom: 30%;
     z-index: 101;
 }
+/* .card .next {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 2rem;
+    background-color: var(--bkg-color3);
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 18px;
+    bottom: 0;
+    left: 41rem;
+    cursor: pointer;
+    z-index: 100;
+}
+.card .next:hover {
+    transform: scale(1.2);
+}
+.card .next:active{
+    transform: scale(0.9);
+} */
 .card .description {
     position: relative;
     font-size: 22px;
     margin: 2rem;
     margin-bottom: 0rem;
     bottom: 1.5rem;
+    /* bottom: 28rem; */
     color: var(--text-color2);
 }
 .card .githubImg {
     position: relative;
     width: 5rem;
     bottom: 2.6rem;
+    /* bottom: 29rem; */
     left: 38.4rem;
     filter: var(--githubImg1);
 }
@@ -955,6 +979,7 @@ body.dark-theme {
     font-size: 25px;
     left: 2rem;
     bottom: 1rem;
+    /* bottom: 27.4rem; */
     color: var(--text-color2);
 }
 .card2 {
