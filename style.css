@@ -1373,6 +1373,15 @@ body.dark-theme {
         bottom: 0.5rem;
         color: var(--text-color2);
     }
+    .sections .skillsSection .skillBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 95rem;
+        height: 40rem;
+        border-radius: 20px;
+        box-shadow: var(--boxshadow);
+    }
 }
 
 @media (max-width: 1400px) and (min-height:650px){
