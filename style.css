@@ -251,7 +251,25 @@ body.dark-theme {
     cursor: pointer;
 }
 .sections .skillsSection .htmlBox:hover {
-    transform: scale(1.2);
+    /* transform: scale(1.2); */
+    animation: slide 1.6s ease-in-out;
+}
+@keyframes slide {
+    0% {
+        left: 0rem
+    }
+    25% {
+        left: -4rem
+    }
+    50% {
+        left: 0rem;
+    }
+    75% {
+        left: 4rem;
+    }
+    100% {
+        left: 0rem;
+    }
 }
 .sections .skillsSection .htmlBox .logo {
     width: 9rem;
@@ -281,9 +299,27 @@ body.dark-theme {
     margin: 1rem 0rem;
     box-shadow: var(--boxshadow);
     cursor: pointer;
+    z-index: 100;
 }
 .sections .skillsSection .jsBox:hover {
-    transform: scale(1.2);
+    /* transform: scale(1.2); */
+    animation: bounce 5s ease-in-out;
+}
+@keyframes bounce {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    25% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(0.85);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 .sections .skillsSection .jsBox .logo {
     width: 2.5rem;
@@ -316,6 +352,25 @@ body.dark-theme {
 }
 .sections .skillsSection .cssBox:hover {
     transform: scale(1.2);
+    animation: spin 2s linear;
+}
+@keyframes spin {
+    0% {
+        transform:rotate(0deg);
+        
+    }
+    25% {
+        transform:rotate(90deg);
+    }
+    50% {
+        transform:rotate(180deg);
+    }
+    75% {
+        transform:rotate(270deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
 }
 .sections .skillsSection .cssBox .logo {
     width: 2.5rem;
@@ -345,9 +400,25 @@ body.dark-theme {
     margin: 1rem 0rem;
     box-shadow: var(--boxshadow);
     cursor: pointer;
+    z-index: 100;
 }
 .sections .skillsSection .pythonBox:hover {
-    transform: scale(1.2);
+    /* transform: scale(1.2); */
+    animation: slideUp 1s ease;
+}
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-6rem);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .sections .skillsSection .pythonBox .logo {
     width: 2.5rem;
@@ -379,7 +450,19 @@ body.dark-theme {
     cursor: pointer;
 }
 .sections .skillsSection .cppBox:hover {
-    transform: scale(1.2);
+    /* transform: scale(1.2); */
+    animation: shake .4s ease;
+}
+@keyframes shake {
+    0% {
+        transform: translateY(0rem) rotate(20deg);
+    }
+    50% {
+        transform: translateY(-1rem);
+    }
+    100% {
+        transform: translateY(0rem) rotate(-20deg);
+    }
 }
 .sections .skillsSection .cppBox .logo {
     width: 2.5rem;
@@ -811,7 +894,7 @@ body.dark-theme {
 
 .card {
     position: absolute;
-    overflow: hidden;
+    overflow: visible;
     top: 30rem;
     left: 4rem;
     background-color: var(--bkg-color2);
@@ -822,6 +905,7 @@ body.dark-theme {
     border-radius: 15px;
     box-shadow: var(--boxshadow);
     transition: height 0.3s ease;
+    cursor: pointer;
 }
 .card:hover{
     height: 38.125rem;
@@ -830,9 +914,16 @@ body.dark-theme {
     width: 100%;
     height: 25rem;
     transition: transform 0.3s ease;
+    position: relative;
+    z-index: 10;
 }
 .card .img1:hover {
     transform: scale(1.03);
+}
+.card .img1:active {
+    transform: scale(2);
+    transform: -50%;
+    right: -100%;
 }
 .card .description {
     position: relative;
