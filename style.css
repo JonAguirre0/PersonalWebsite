@@ -107,7 +107,6 @@ body.dark-theme {
 .nav .menu {
     max-width: 20vw;
     width: 100%;
-    /* margin-right: auto; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,8 +122,6 @@ body.dark-theme {
     -webkit-user-select: none;
     -moz-user-select: none; 
     -ms-user-select: none;
-    /* position: relative;
-    right: 55rem; */
     /* below is one option */
     /* position: relative;
     right: 35rem; */
@@ -321,7 +318,6 @@ body.dark-theme {
     align-items: center;
 }
 .sections .skillsSection .skillBox {
-    /* background-color: #EAE9E4; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -754,10 +750,6 @@ body.dark-theme {
     flex-wrap: wrap;
     gap: 3rem;
 }
-/* .sections .projectsSection .project1 .imgTest {
-    width: 700px;
-    border-radius: 20px;
-} */
 .sections .projectsSection .project1 .imgTest {
     display: flex;
     position: relative;
@@ -816,7 +808,6 @@ body.dark-theme {
     position: relative;
     align-items: center;
     justify-content: center;
-    /* margin-top: 19rem; */
     margin-top: 51rem;
 }
 .sections .projectsSection .links .githubBtn {
@@ -827,8 +818,6 @@ body.dark-theme {
     border-radius: 10px;
     border: none;
     box-shadow: var(--boxshadow);
-    /* width: 10rem; */
-    /* height: 2rem; */
     width: 19rem;
     height: 4rem;
     font-size: 22px;
@@ -845,17 +834,12 @@ body.dark-theme {
 .sections .projectsSection .links .githubBtn:active {
     transform: scale(0.9);
 }
-/* .sections .projectsSection .links .githubBtn i{
-    margin-left: 1rem;
-    font-size: 22px;
-} */
 .sections .projectsSection .links .githubImg2 {
     display: flex;
     position: relative;
     align-items: center;
     justify-content: center;
     width: 5rem;
-    /* cursor: pointer; */
     z-index: 100;
     filter: invert(0);
 }
@@ -869,13 +853,7 @@ body.dark-theme {
     margin: 0 20rem 0 20rem;
     flex-wrap: wrap;
 }
-/* .sections .projectsSection .links .githubImg2:hover{
-    transform: scale(1.2);
-}
-.sections .projectsSection .links .githubImg2:active {
-    transform: scale(0.9);
-} */
- 
+
 
 .card {
     position: absolute;
@@ -1090,7 +1068,6 @@ body.dark-theme {
     position: relative;
     color: var(--text-color);
     font-size: 2rem;
-    /* top: 21rem; */
     bottom: 5rem;
     cursor: pointer;
     z-index: 100;
@@ -1101,7 +1078,6 @@ body.dark-theme {
     position: relative;
     align-items: center;
     justify-content: center;
-    /* width: 12rem; */
     width: 16rem;
     height: 2.2rem;
     font-family: inherit;
@@ -1225,7 +1201,6 @@ body.dark-theme {
         align-items: center;
         justify-content: center;
         margin-top: 3rem;
-        /* top: 35rem; */
         top: 23rem;
     }
     .sections .projectsSection .links .githubImg2 {
