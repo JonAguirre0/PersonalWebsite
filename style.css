@@ -15,6 +15,8 @@
     --darkModeOutLine: white;
     --darkMode-box-shadow: 0 0 20px 7px rgba(0,0,0,0.6);
     --githubImg1: invert(1);
+    --restapi: invert(0);
+    --express: invert(0);
     /* --boxshadow: 0 4px 10px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     --boxshadow: 0px 5px 10px 2px rgba(0,0,0,0.5);
 }
@@ -38,6 +40,8 @@ body.dark-theme {
     --darkModeOutLine: rgb(184, 189, 111);
     --darkMode-box-shadow: 0 0 20px 7px rgba(255,255,100,0.6);
     --githubImg1: invert(0);
+    --restapi: invert(1);
+    --express: invert(1);
     /* --boxshadow: 0 4px 10px 2px rgba(255,255,255, 0.2), 0 6px 20px 0 rgba(255,255,255, 0.19); */
     --boxshadow: 0px 5px 10px 2px rgba(255,255,255,0.5);
 }
@@ -214,15 +218,16 @@ body.dark-theme {
     position: relative;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
 }
 .sections .skillsSection .skillBox {
-    background-color: aquamarine;
+    /* background-color: #EAE9E4; */
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50rem;
-    height: 50rem;
+    width: 95rem;
+    height: 60rem;
+    border-radius: 20px;
+    box-shadow: var(--boxshadow);
 }
 .sections .skillsSection .skillBox .skills {
     display: flex;
@@ -240,9 +245,10 @@ body.dark-theme {
     position: relative;
     width: 14rem;
     height: 4rem;
-    background-color: aqua;
     border-radius: 15px;
     margin: 1rem 0rem;
+    box-shadow: var(--boxshadow);
+    cursor: pointer;
 }
 .sections .skillsSection .htmlBox:hover {
     transform: scale(1.2);
@@ -262,6 +268,7 @@ body.dark-theme {
     position: relative;
     font-size: 22px;
     right: 3rem;
+    color: var(--text-color);
 }
 .sections .skillsSection .jsBox {
     display: flex;
@@ -270,9 +277,10 @@ body.dark-theme {
     position: relative;
     width: 14rem;
     height: 4rem;
-    background-color: aqua;
     border-radius: 15px;
     margin: 1rem 0rem;
+    box-shadow: var(--boxshadow);
+    cursor: pointer;
 }
 .sections .skillsSection .jsBox:hover {
     transform: scale(1.2);
@@ -292,6 +300,7 @@ body.dark-theme {
     position: relative;
     font-size: 22px;
     left: 0.5rem;
+    color: var(--text-color);
 }
 .sections .skillsSection .cssBox {
     display: flex;
@@ -300,9 +309,10 @@ body.dark-theme {
     position: relative;
     width: 14rem;
     height: 4rem;
-    background-color: aqua;
     border-radius: 15px;
     margin: 1rem 0rem;
+    box-shadow: var(--boxshadow);
+    cursor: pointer;
 }
 .sections .skillsSection .cssBox:hover {
     transform: scale(1.2);
@@ -322,6 +332,7 @@ body.dark-theme {
     position: relative;
     font-size: 22px;
     left: 0rem;
+    color: var(--text-color);
 }
 .sections .skillsSection .pythonBox {
     display: flex;
@@ -330,9 +341,10 @@ body.dark-theme {
     position: relative;
     width: 14rem;
     height: 4rem;
-    background-color: aqua;
     border-radius: 15px;
     margin: 1rem 0rem;
+    box-shadow: var(--boxshadow);
+    cursor: pointer;
 }
 .sections .skillsSection .pythonBox:hover {
     transform: scale(1.2);
@@ -352,6 +364,7 @@ body.dark-theme {
     position: relative;
     font-size: 22px;
     left: 0rem;
+    color: var(--text-color);
 }
 .sections .skillsSection .cppBox {
     display: flex;
@@ -360,9 +373,10 @@ body.dark-theme {
     position: relative;
     width: 14rem;
     height: 4rem;
-    background-color: aqua;
     border-radius: 15px;
     margin: 1rem 0rem;
+    box-shadow: var(--boxshadow);
+    cursor: pointer;
 }
 .sections .skillsSection .cppBox:hover {
     transform: scale(1.2);
@@ -382,6 +396,7 @@ body.dark-theme {
     position: relative;
     font-size: 22px;
     left: 0rem;
+    color: var(--text-color);
 }
 .sections .skillsSection .mongoDBBox {
     display: flex;
@@ -390,9 +405,10 @@ body.dark-theme {
     position: relative;
     width: 14rem;
     height: 4rem;
-    background-color: aqua;
     border-radius: 15px;
     margin: 1rem 0rem;
+    box-shadow: var(--boxshadow);
+    cursor: pointer;
 }
 .sections .skillsSection .mongoDBBox:hover {
     transform: scale(1.2);
@@ -412,6 +428,7 @@ body.dark-theme {
     position: relative;
     font-size: 22px;
     left: 0rem;
+    color: var(--text-color);
 }
 .sections .skillsSection .restapiBox {
     display: flex;
@@ -420,9 +437,10 @@ body.dark-theme {
     position: relative;
     width: 14rem;
     height: 4rem;
-    background-color: aqua;
     border-radius: 15px;
     margin: 1rem 0rem;
+    box-shadow: var(--boxshadow);
+    cursor: pointer;
 }
 .sections .skillsSection .restapiBox:hover {
     transform: scale(1.2);
@@ -434,6 +452,7 @@ body.dark-theme {
     top: 0rem;
     right: 1.2rem;
     z-index: 100;
+    filter: var(--restapi);
 }
 .sections .skillsSection .restapiBox .restapi {
     display: flex;
@@ -442,6 +461,7 @@ body.dark-theme {
     position: relative;
     font-size: 22px;
     right: 1.6rem;
+    color: var(--text-color);
 }
 .sections .skillsSection .nodejsBox {
     display: flex;
@@ -450,9 +470,10 @@ body.dark-theme {
     position: relative;
     width: 14rem;
     height: 4rem;
-    background-color: aqua;
     border-radius: 15px;
     margin: 1rem 0rem;
+    box-shadow: var(--boxshadow);
+    cursor: pointer;
 }
 .sections .skillsSection .nodejsBox:hover {
     transform: scale(1.2);
@@ -472,6 +493,7 @@ body.dark-theme {
     position: relative;
     font-size: 22px;
     right: 1.6rem;
+    color: var(--text-color);
 }
 .sections .skillsSection .expressBox {
     display: flex;
@@ -480,9 +502,10 @@ body.dark-theme {
     position: relative;
     width: 14rem;
     height: 4rem;
-    background-color: aqua;
     border-radius: 15px;
-    margin: 1rem 0rem;
+    margin: 6rem 0rem;
+    box-shadow: var(--boxshadow);
+    cursor: pointer;
 }
 .sections .skillsSection .expressBox:hover {
     transform: scale(1.2);
@@ -494,6 +517,7 @@ body.dark-theme {
     top: 0rem;
     right: 2rem;
     z-index: 100;
+    filter: var(--express);
 }
 .sections .skillsSection .expressBox .express {
     display: flex;
@@ -502,6 +526,7 @@ body.dark-theme {
     position: relative;
     font-size: 22px;
     right: 0.5rem;
+    color: var(--text-color);
 }
 
 
