@@ -10,6 +10,7 @@ const resumeBtn = document.querySelector('.resumeBtn')
 const video1 = document.querySelector('.vid1')
 const nextBtn = document.querySelector('.next')
 const prevBtn = document.querySelector('.prev')
+const closeBtn = document.querySelector('.closeBtn')
 const img1 = document.querySelector('.img1')
 const imgs = document.getElementById('imgs')
 const img = document.querySelectorAll('#imgs img')
@@ -76,3 +77,10 @@ function changeImage() {
 
     imgs.style.transform = `translateX(${-idx * 700}px)`
 }
+
+img1.addEventListener('click', () => {
+    document.querySelector('.overlay').style.display = 'flex'
+})
+closeBtn.addEventListener('click', () => {
+    document.querySelector('.overlay').style.display = 'none'
+})

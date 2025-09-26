@@ -915,9 +915,11 @@ body.dark-theme {
     overflow: hidden;
     cursor: pointer;
 }
+/* .imageContainer:active {
+    overflow: visible;
+} */
 .images {
     display: flex;
-    transform: translateX(0);
     transition: transform 0.5s ease-in-out;
 }
 .images .img1 {
@@ -939,12 +941,13 @@ body.dark-theme {
 .card .img1:hover {
     transform: scale(1.03);
 }
-.card .img1:active{
+/* .images .img1:active{
     transform: scale(2);
-    right: -100%;
+    position: relative;
+    left: 50rem;
     bottom: 30%;
-    z-index: 101;
-}
+    z-index: 100;
+} */
 .buttonsContainer {
     display: flex;
     justify-content: center;
@@ -1020,6 +1023,45 @@ body.dark-theme {
     bottom: 2rem;
     /* bottom: 27.4rem; */
     color: var(--text-color2);
+}
+.overlay {
+    position: fixed;
+    justify-content: center;
+    /* top: 30rem; */
+    top: 9rem;
+    /* left: 80rem; */
+    left: 34rem;
+    display: none;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+    width: 78rem;
+    height: 42rem;
+}
+.zoomed {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding-left: 2rem;
+    transform: scale(0.90);
+    z-index: 1000;
+}
+.closeBtn {
+    display: flex;
+    position: relative;
+    font-size: 2rem;
+    right: 4rem;
+    bottom: -0.4rem;
+    /* background: none; */
+    background: none;
+    border: none;
+    z-index: 10000;
+    color: black;
+    cursor: pointer;
+}
+.closeBtn:hover {
+    background-color: red;
+    height: 2rem;
 }
 .card2 {
     position: absolute;
