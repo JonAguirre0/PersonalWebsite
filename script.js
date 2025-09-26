@@ -9,9 +9,12 @@ const githubBtn = document.querySelector('.githubBtn')
 const resumeBtn = document.querySelector('.resumeBtn')
 const video1 = document.querySelector('.vid1')
 const nextBtn = document.querySelector('.next')
+const prevBtn = document.querySelector('.prev')
 const img1 = document.querySelector('.img1')
 const imgs = document.getElementById('imgs')
 const img = document.querySelectorAll('#imgs img')
+
+let idx = 0
 
 home.addEventListener('click', () => {
     console.log('Home Clicked')
@@ -59,7 +62,11 @@ nextBtn.addEventListener('click', () => {
     changeImage()
 })
 
-let idx = 0
+prevBtn.addEventListener('click', () => {
+    idx--
+    changeImage()
+})
+
 function changeImage() {
     if(idx > img.length - 1) {
         idx = 0

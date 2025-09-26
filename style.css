@@ -910,36 +910,56 @@ body.dark-theme {
 .card:active{
     overflow: visible;
 }
-.card .img1 {
+.imageContainer {
+    width: 700px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.images {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+}
+.images .img1 {
+    width: 700px;
+    height: 400px;
+}
+.images .img2 {
+    width: 700px;
+    height: 400px;
+}
+/* .card .img1 {
     width: 100%;
     height: 25rem;
     transition: transform 0.3s ease;
     position: relative;
     z-index: 100;
     cursor: pointer;
-}
+} */
 .card .img1:hover {
     transform: scale(1.03);
 }
-.card .img1:active {
+.card .img1:active{
     transform: scale(2);
     right: -100%;
     bottom: 30%;
     z-index: 101;
 }
-/* .card .next {
+.buttonsContainer {
     display: flex;
-    position: relative;
     justify-content: center;
     align-items: center;
+}
+.card .next {
+    position: relative;
     border: none;
-    width: 2rem;
+    width: 4rem;
     background-color: var(--bkg-color3);
     border-radius: 2px;
     font-family: inherit;
     font-size: 18px;
-    bottom: 0;
-    left: 41rem;
+    top: 0.4rem;
+    left: 5rem;
     cursor: pointer;
     z-index: 100;
 }
@@ -948,20 +968,39 @@ body.dark-theme {
 }
 .card .next:active{
     transform: scale(0.9);
-} */
+}
+.card .prev {
+    position: relative;
+    border: none;
+    width: 4rem;
+    background-color: var(--bkg-color3);
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 18px;
+    top: 0.4rem;
+    right: 5rem;
+    cursor: pointer;
+    z-index: 100;
+}
+.card .prev:hover {
+    transform: scale(1.2);
+}
+.card .prev:active{
+    transform: scale(0.9);
+}
 .card .description {
     position: relative;
     font-size: 22px;
     margin: 2rem;
     margin-bottom: 0rem;
-    bottom: 1.5rem;
+    bottom: 3rem;
     /* bottom: 28rem; */
     color: var(--text-color2);
 }
 .card .githubImg {
     position: relative;
     width: 5rem;
-    bottom: 2.6rem;
+    bottom: 4rem;
     /* bottom: 29rem; */
     left: 38.4rem;
     filter: var(--githubImg1);
@@ -978,7 +1017,7 @@ body.dark-theme {
     justify-content: center;
     font-size: 25px;
     left: 2rem;
-    bottom: 1rem;
+    bottom: 2rem;
     /* bottom: 27.4rem; */
     color: var(--text-color2);
 }
