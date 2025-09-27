@@ -1038,6 +1038,20 @@ body.dark-theme {
     width: 78rem;
     height: 42rem;
 }
+.overlay2 {
+    position: fixed;
+    justify-content: center;
+    /* top: 30rem; */
+    top: 9rem;
+    /* left: 80rem; */
+    left: 34rem;
+    display: none;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+    width: 78rem;
+    height: 42rem;
+}
 .zoomed {
     display: flex;
     position: relative;
@@ -1056,7 +1070,7 @@ body.dark-theme {
     background: none;
     border: none;
     z-index: 10000;
-    color: black;
+    color: var(--text-color);
     cursor: pointer;
 }
 .closeBtn:hover {

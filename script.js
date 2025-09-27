@@ -12,6 +12,7 @@ const nextBtn = document.querySelector('.next')
 const prevBtn = document.querySelector('.prev')
 const closeBtn = document.querySelector('.closeBtn')
 const img1 = document.querySelector('.img1')
+const img2 = document.querySelector('.img2')
 const imgs = document.getElementById('imgs')
 const img = document.querySelectorAll('#imgs img')
 
@@ -81,6 +82,16 @@ function changeImage() {
 img1.addEventListener('click', () => {
     document.querySelector('.overlay').style.display = 'flex'
 })
-closeBtn.addEventListener('click', () => {
-    document.querySelector('.overlay').style.display = 'none'
+img2.addEventListener('click', () => {
+    document.querySelector('.overlay2').style.display = 'flex'
+})
+// closeBtn.addEventListener('click', () => {
+//     document.querySelector('.overlay').style.display = 'none'
+//     //document.querySelector('.overlay2').style.display = 'none'
+// })
+
+document.querySelectorAll('.closeBtn').forEach(closeBtn => {
+    closeBtn.addEventListener('click', () => {
+        closeBtn.parentElement.style.display = 'none'
+    })
 })
