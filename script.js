@@ -59,39 +59,32 @@ resumeBtn.addEventListener('click', () => {
     window.open('https://docs.google.com/document/d/1HhKYJfpNmp3MKKt3fLDBxhoFcogyUbv-jtSl79XdjK0/edit?usp=sharing', '_blank')
 })
 
-nextBtn.addEventListener('click', () => {
-    idx++
-    changeImage()
-})
-
-// document.querySelectorAll('.next').forEach(nextBtn => {
-//     nextBtn.addEventListener('click', () => {
-//         idx++
-//         changeImage()
-//     })
+// nextBtn.addEventListener('click', () => {
+//     idx++
+//     changeImage()
 // })
 
-prevBtn.addEventListener('click', () => {
-    idx--
-    changeImage()
-})
+// prevBtn.addEventListener('click', () => {
+//     idx--
+//     changeImage()
+// })
 
-function changeImage() {
-    if(idx > img.length - 1) {
-        idx = 0
-    } else if (idx < 0) {
-        idx = img.length -1 
-    }
+// function changeImage() {
+//     if(idx > img.length - 1) {
+//         idx = 0
+//     } else if (idx < 0) {
+//         idx = img.length -1 
+//     }
 
-    imgs.style.transform = `translateX(${-idx * 700}px)`
-}
+//     imgs.style.transform = `translateX(${-idx * 700}px)`
+// }
 
-img1.addEventListener('click', () => {
-    document.querySelector('.overlay').style.display = 'flex'
-})
-img2.addEventListener('click', () => {
-    document.querySelector('.overlay2').style.display = 'flex'
-})
+// img1.addEventListener('click', () => {
+//     document.querySelector('.overlay').style.display = 'flex'
+// })
+// img2.addEventListener('click', () => {
+//     document.querySelector('.overlay2').style.display = 'flex'
+// })
 // closeBtn.addEventListener('click', () => {
 //     document.querySelector('.overlay').style.display = 'none'
 //     //document.querySelector('.overlay2').style.display = 'none'
@@ -102,3 +95,40 @@ document.querySelectorAll('.closeBtn').forEach(closeBtn => {
         closeBtn.parentElement.style.display = 'none'
     })
 })
+
+document.querySelectorAll('.card, .card2, .card3').forEach(card => {
+  const imgsContainer = card.querySelector('.images');
+  const imgs = imgsContainer.querySelectorAll('img');
+  const nextBtn = card.querySelector('.next');
+  const prevBtn = card.querySelector('.prev');
+  const overlays = card.querySelectorAll('.overlay, .overlay2, .overlay3, .overlay4, .overlay5');
+  let idx = 0;
+
+    function changeImage() {
+        if (idx > imgs.length - 1) {
+        idx = 0;
+        } else if (idx < 0) {
+        idx = imgs.length - 1;
+        }
+        imgsContainer.style.transform = `translateX(${-idx * 700}px)`;
+    }
+
+    nextBtn.addEventListener('click', () => {
+        idx++;
+        changeImage();
+    });
+
+    prevBtn.addEventListener('click', () => {
+        idx--;
+        changeImage();
+    });
+
+  // Show overlay when image is clicked
+    imgs.forEach((img, i) => {
+        img.addEventListener('click', () => {
+            if (overlays[i]) {
+                overlays[i].style.display = 'flex';
+            }
+        });
+    });
+});

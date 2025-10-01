@@ -930,6 +930,18 @@ body.dark-theme {
     width: 700px;
     height: 400px;
 }
+.images .img3 {
+    width: 700px;
+    height: 400px;
+}
+.images .img4 {
+    width: 700px;
+    height: 400px;
+}
+.images .img5 {
+    width: 700px;
+    height: 400px;
+}
 /* .card .img1 {
     width: 100%;
     height: 25rem;
@@ -961,7 +973,7 @@ body.dark-theme {
     border-radius: 2px;
     font-family: inherit;
     font-size: 18px;
-    top: 0.4rem;
+    top: 1.3rem;
     left: 5rem;
     cursor: pointer;
     z-index: 100;
@@ -980,7 +992,7 @@ body.dark-theme {
     border-radius: 2px;
     font-family: inherit;
     font-size: 18px;
-    top: 0.4rem;
+    top: 1.3rem;
     right: 5rem;
     cursor: pointer;
     z-index: 100;
@@ -1052,6 +1064,48 @@ body.dark-theme {
     width: 78rem;
     height: 42rem;
 }
+.overlay3 {
+    position: fixed;
+    justify-content: center;
+    /* top: 30rem; */
+    top: 9rem;
+    /* left: 80rem; */
+    left: 34rem;
+    display: none;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+    width: 78rem;
+    height: 42rem;
+}
+.overlay4 {
+    position: fixed;
+    justify-content: center;
+    /* top: 30rem; */
+    top: 9rem;
+    /* left: 80rem; */
+    left: 34rem;
+    display: none;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+    width: 78rem;
+    height: 42rem;
+}
+.overlay5 {
+    position: fixed;
+    justify-content: center;
+    /* top: 30rem; */
+    top: 9rem;
+    /* left: 80rem; */
+    left: 34rem;
+    display: none;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+    width: 78rem;
+    height: 42rem;
+}
 .zoomed {
     display: flex;
     position: relative;
@@ -1097,7 +1151,7 @@ body.dark-theme {
 .card2:active{
     overflow: visible;
 }
-.card2 .img2 {
+/* .card2 .img2 {
     width: 100%;
     height: 25rem;
     transition: transform 0.3s ease;
@@ -1112,13 +1166,68 @@ body.dark-theme {
     transform: scale(2);
     bottom: 30%;
     z-index: 101;
+} */
+.card2 .imageContainer {
+    width: 700px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.card2 .images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.card2 .images .img1 {
+    width: 700px;
+    height: 400px;
+}
+.card2 .images .img2 {
+    width: 700px;
+    height: 400px;
+}
+.card2 .next {
+    position: relative;
+    border: none;
+    width: 4rem;
+    background-color: var(--bkg-color3);
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 18px;
+    top: 1.3rem;
+    left: 5rem;
+    cursor: pointer;
+    z-index: 100;
+}
+.card2 .next:hover {
+    transform: scale(1.2);
+}
+.card2 .next:active{
+    transform: scale(0.9);
+}
+.card2 .prev {
+    position: relative;
+    border: none;
+    width: 4rem;
+    background-color: var(--bkg-color3);
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 18px;
+    top: 1.3rem;
+    right: 5rem;
+    cursor: pointer;
+    z-index: 100;
+}
+.card2 .prev:hover {
+    transform: scale(1.2);
+}
+.card2 .prev:active{
+    transform: scale(0.9);
 }
 .card2 .description {
     position: relative;
     font-size: 22px;
     margin: 2rem;
     margin-bottom: 0rem;
-    bottom: 1.5rem;
+    bottom: 3rem;
     color: var(--text-color2);
 }
 .card2 h3 {
@@ -1127,13 +1236,13 @@ body.dark-theme {
     justify-content: center;
     font-size: 25px;
     left: 2rem;
-    bottom: 1rem;
+    bottom: 2rem;
     color: var(--text-color2);
 }
 .card2 .githubImg {
     position: relative;
     width: 5rem;
-    bottom: 2.6rem;
+    bottom: 4rem;
     left: 38.4rem;
     filter: var(--githubImg1);
 }
@@ -1163,7 +1272,7 @@ body.dark-theme {
 .card3:active{
     overflow: visible;
 }
-.card3 .img3 {
+/* .card3 .img3 {
     width: 100%;
     height: 25rem;
     transition: transform 0.3s ease;
@@ -1179,8 +1288,8 @@ body.dark-theme {
     left: -100%;
     bottom: 30%;
     z-index: 101;
-}
-/* .card3 .imageContainer {
+} */
+.card3 .imageContainer {
     width: 700px;
     overflow: hidden;
     cursor: pointer;
@@ -1189,15 +1298,15 @@ body.dark-theme {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
-.card3 .images .img3 {
+.card3 .images .img1 {
     width: 700px;
     height: 400px;
 }
 .card3 .images .img2 {
     width: 700px;
     height: 400px;
-} */
-/* .card3 .next {
+}
+.card3 .next {
     position: relative;
     border: none;
     width: 4rem;
@@ -1205,7 +1314,7 @@ body.dark-theme {
     border-radius: 2px;
     font-family: inherit;
     font-size: 18px;
-    top: 0.4rem;
+    top: 1.3rem;
     left: 5rem;
     cursor: pointer;
     z-index: 100;
@@ -1224,7 +1333,7 @@ body.dark-theme {
     border-radius: 2px;
     font-family: inherit;
     font-size: 18px;
-    top: 0.4rem;
+    top: 1.3rem;
     right: 5rem;
     cursor: pointer;
     z-index: 100;
@@ -1234,19 +1343,19 @@ body.dark-theme {
 }
 .card3 .prev:active{
     transform: scale(0.9);
-} */
+}
 .card3 .description {
     position: relative;
     font-size: 22px;
     margin: 2rem;
     margin-bottom: 0rem;
-    bottom: 1.5rem;
+    bottom: 3rem;
     color: var(--text-color2);
 }
 .card3 .githubImg {
     position: relative;
     width: 5rem;
-    bottom: 2.6rem;
+    bottom: 4rem;
     left: 38.4rem;
     filter: var(--githubImg1)
 }
@@ -1262,10 +1371,10 @@ body.dark-theme {
     justify-content: center;
     font-size: 25px;
     left: 2rem;
-    bottom: 1rem;
+    bottom: 2rem;
     color: var(--text-color2);
 }
-/* .card3 .overlay {
+.card3 .overlay {
     position: fixed;
     justify-content: center;
     top: 9rem;
@@ -1312,7 +1421,7 @@ body.dark-theme {
 .card3 .closeBtn:hover {
     background-color: red;
     height: 2rem;
-} */
+}
 
 
 /* 
