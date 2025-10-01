@@ -102,6 +102,7 @@ document.querySelectorAll('.card, .card2, .card3').forEach(card => {
   const nextBtn = card.querySelector('.next');
   const prevBtn = card.querySelector('.prev');
   const overlays = card.querySelectorAll('.overlay, .overlay2, .overlay3, .overlay4, .overlay5');
+  const containerWidth = imgsContainer.offsetWidth
   let idx = 0;
 
     function changeImage() {
@@ -110,7 +111,7 @@ document.querySelectorAll('.card, .card2, .card3').forEach(card => {
         } else if (idx < 0) {
         idx = imgs.length - 1;
         }
-        imgsContainer.style.transform = `translateX(${-idx * 700}px)`;
+        imgsContainer.style.transform = `translateX(${-idx * containerWidth}px)`;
     }
 
     nextBtn.addEventListener('click', () => {

@@ -13,7 +13,7 @@
     --darkModeText: white;
     --darkModeBckg: black;
     --darkModeOutLine: white;
-    --darkMode-box-shadow: 0 0 20px 7px rgba(0,0,0,0.6);
+    --darkMode-box-shadow: 0 0 13px 3px rgba(0,0,0,0.6);
     --darkModeSun: opacity(1);
     --darkModeMoon: opacity(0);
     --githubImg1: invert(1);
@@ -39,7 +39,7 @@ body.dark-theme {
     --darkModeText: black;
     --darkModeBckg: rgb(219, 224, 113);
     --darkModeOutLine: rgb(184, 189, 111);
-    --darkMode-box-shadow: 0 0 20px 7px rgba(255,255,100,0.6);
+    --darkMode-box-shadow: 0 0 12px 3px rgba(255,255,100,0.6);
     --darkModeSun: opacity(0);
     --darkModeMoon: opacity(1);
     --githubImg1: invert(0);
@@ -1175,11 +1175,11 @@ body.dark-theme {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
-.card2 .images .img1 {
+.card2 .img1 {
     width: 700px;
     height: 400px;
 }
-.card2 .images .img2 {
+.card2 .img2 {
     width: 700px;
     height: 400px;
 }
@@ -1297,11 +1297,11 @@ body.dark-theme {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
-.card3 .images .img1 {
+.card3 .img1 {
     width: 700px;
     height: 400px;
 }
-.card3 .images .img2 {
+.card3 .img2 {
     width: 700px;
     height: 400px;
 }
@@ -1663,7 +1663,7 @@ body.dark-theme {
         left: 2rem;
         background-color: var(--bkg-color2);
         width: 500px;
-        height: 390px;
+        height: 370px;
         margin: 1rem;
         margin-left: 5rem;
         border-radius: 15px;
@@ -1671,27 +1671,32 @@ body.dark-theme {
         transition: height 0.3s ease;
     }
     .card:hover{
-        height: 470px;
+        height: 490px;
+    }
+    .imageContainer {
+        width: 500px;
+        overflow: hidden;
+        cursor: pointer;
     }
     .card .img1 {
         width: 500px;
-        height: 350px;
+        height: 320px;
     }
     .card .img2 {
         width: 500px;
-        height: 350px;
+        height: 320px;
     }
     .card .img3 {
         width: 500px;
-        height: 350px;
+        height: 320px;
     }
     .card .img4 {
         width: 500px;
-        height: 350px;
+        height: 320px;
     }
     .card .img5 {
         width: 500px;
-        height: 350px;
+        height: 320px;
     }
     .card .img1:active {
         transform: scale(2);
@@ -1703,14 +1708,14 @@ body.dark-theme {
         font-size: 16px;
         margin: 2rem;
         margin-bottom: 0rem;
-        bottom: 1.5rem;
+        bottom: 3rem;
         color: var(--text-color2);
     }
     .card .githubImg {
         position: relative;
         width: 80px;
-        bottom: 2.5rem;
-        left: 25rem;
+        bottom: 4.5rem;
+        left: 26rem;
         filter: var(--githubImg1)
     }
     .card h3 {
@@ -1722,6 +1727,66 @@ body.dark-theme {
         bottom: 2rem;
         color: var(--text-color2);
     }
+    .buttonsContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom: 0.6rem;
+        left: 2rem;
+    }
+    .card .next {
+        position: relative;
+        border: none;
+        width: 4rem;
+        top: 1.3rem;
+        left: 5rem;
+    }
+    .overlay {
+        position: fixed;
+        justify-content: center;
+        top: 8rem;
+        left: 20rem;
+        display: none;
+        width: 78rem;
+        height: 42rem;
+    }
+    .overlay2 {
+        position: fixed;
+        justify-content: center;
+        top: 8rem;
+        left: 20rem;
+        display: none;
+        width: 78rem;
+        height: 42rem;
+    }
+    .overlay3 {
+        position: fixed;
+        justify-content: center;
+        top: 8rem;
+        left: 20rem;
+        display: none;
+        width: 78rem;
+        height: 42rem;
+    }
+    .overlay4 {
+        position: fixed;
+        justify-content: center;
+        top: 8rem;
+        left: 20rem;
+        display: none;
+        width: 78rem;
+        height: 42rem;
+    }
+    .overlay5 {
+        position: fixed;
+        justify-content: center;
+        top: 8rem;
+        left: 20rem;
+        display: none;
+        width: 78rem;
+        height: 42rem;
+    }
     .card2 {
         position: absolute;
         overflow: hidden;
@@ -1729,7 +1794,7 @@ body.dark-theme {
         left: 40rem;
         background-color: var(--bkg-color2);
         width: 500px;
-        height: 350px;
+        height: 370px;
         margin: 1rem;
         margin-left: 5rem;
         border-radius: 15px;
@@ -1737,30 +1802,34 @@ body.dark-theme {
         transition: height 0.3s ease;
     }
     .card2:hover{
-        height: 470px;
+        height: 490px;
     }
     .card2:active{
         overflow: visible;
     }
-    .card2 .img2 {
-        width: 100%;
-        height: 300px;
-        transition: transform 0.3s ease;
+    .card2 .imageContainer {
+        width: 500px;
+        overflow: hidden;
+        cursor: pointer;
     }
-    .card2 .img2:hover {
-        transform: scale(1.03);
+    .card2 .images .img1 {
+        width: 500px;
+        height: 320px;
     }
-    .card2 .img2:active {
-        transform: scale(2);
-        bottom: 10%;
-        z-index: 101;
+    .card2 .images .img2 {
+        width: 500px;
+        height: 320px;
+    }
+    .card2 .images .img3 {
+        width: 500px;
+        height: 320px;
     }
     .card2 .description {
         position: relative;
         font-size: 16px;
         margin: 2rem;
         margin-bottom: 0rem;
-        bottom: 1.5rem;
+        bottom: 3rem;
         color: var(--text-color2);
     }
     .card2 h3 {
@@ -1769,15 +1838,23 @@ body.dark-theme {
         justify-content: center;
         font-size: 20px;
         left: 2rem;
-        bottom: .5rem;
+        bottom: 2rem;
         color: var(--text-color2);
     }
     .card2 .githubImg {
         position: relative;
         width: 80px;
-        bottom: 2.5rem;
-        left: 25rem;
+        bottom: 4.5rem;
+        left: 26rem;
         filter: var(--githubImg1);
+    }
+    .card2 .buttonsContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom: 0.6rem;
+        left: 2rem;
     }
     .card3 {
         position: absolute;
@@ -1786,7 +1863,7 @@ body.dark-theme {
         left: 78rem;
         background-color: var(--bkg-color2);
         width: 500px;
-        height: 350px;
+        height: 370px;
         margin: 1rem;
         margin-left: 5rem;
         border-radius: 15px;
@@ -1794,31 +1871,34 @@ body.dark-theme {
         transition: height 0.3s ease;
     }
     .card3:hover{
-        height: 470px;
+        height: 490px;
     }
-    .card3 .img3 {
-        width: 100%;
-        height: 300px;
-        transition: transform 0.3s ease;
+    .card3 .imageContainer {
+        width: 500px;
+        overflow: hidden;
+        cursor: pointer;
     }
-    .card3 .img3:active {
-        transform: scale(2);
-        bottom: 10%;
-        z-index: 101;
+    .card3 .img1 {
+        width: 500px;
+        height: 320px;
+    }
+    .card3 .img2 {
+        width: 500px;
+        height: 320px;
     }
     .card3 .description {
         position: relative;
         font-size: 16px;
         margin: 2rem;
         margin-bottom: 0rem;
-        bottom: 1.5rem;
+        bottom: 3rem;
         color: var(--text-color2);
     }
     .card3 .githubImg {
         position: relative;
         width: 80px;
-        bottom: 2.5rem;
-        left: 25rem;
+        bottom: 4.5rem;
+        left: 26rem;
         filter: var(--githubImg1)
     }
     .card3 h3 {
@@ -1827,8 +1907,26 @@ body.dark-theme {
         justify-content: center;
         font-size: 20px;
         left: 2rem;
-        bottom: 0.5rem;
+        bottom: 2rem;
         color: var(--text-color2);
+    }
+    .card3 .overlay {
+        position: fixed;
+        justify-content: center;
+        top: 8rem;
+        left: 20rem;
+        display: none;
+        width: 78rem;
+        height: 42rem;
+    }
+    .card3 .overlay2 {
+        position: fixed;
+        justify-content: center;
+        top: 8rem;
+        left: 20rem;
+        display: none;
+        width: 78rem;
+        height: 42rem;
     }
 }
 
@@ -2067,11 +2165,11 @@ body.dark-theme {
     .card {
         position: absolute;
         overflow: hidden;
-        top: 19rem;
+        top: 17rem;
         left: 0rem;
         background-color: var(--bkg-color2);
         width: 400px;
-        height: 250px;
+        height: 260px;
         margin: 1rem;
         margin-left: 5rem;
         border-radius: 15px;
@@ -2081,29 +2179,47 @@ body.dark-theme {
     .card:hover{
         height: 420px;
     }
-    .card .img1 {
-        width: 100%;
-        height: 200px;
-        transition: transform 0.3s ease;
+    .imageContainer {
+        width: 400px;
+        overflow: hidden;
+        cursor: pointer;
     }
-    .card .img1:active {
-        transform: scale(2);
-        position: relative;
-        bottom: 20%;
-        z-index: 101;
+    .images {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    .images .img1 {
+        width: 400px;
+        height: 220px;
+    }
+    .images .img2 {
+        width: 400px;
+        height: 220px;
+    }
+    .images .img3 {
+        width: 400px;
+        height: 220px;
+    }
+    .images .img4 {
+        width: 400px;
+        height: 220px;
+    }
+    .images .img5 {
+        width: 400px;
+        height: 220px;
     }
     .card .description {
         position: relative;
         font-size: 16px;
         margin: 2rem;
         margin-bottom: 0rem;
-        bottom: 1.5rem;
+        bottom: 3.5rem;
         color: var(--text-color2);
     }
     .card .githubImg {
         position: relative;
         width: 80px;
-        bottom: 1rem;
+        bottom: 3.5rem;
         left: 20rem;
         filter: var(--githubImg1)
     }
@@ -2113,17 +2229,78 @@ body.dark-theme {
         justify-content: center;
         font-size: 20px;
         left: 2rem;
-        bottom: .5rem;
+        bottom: 2.2rem;
         color: var(--text-color2);
+    }
+    .buttonsContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom: 0.8rem;
+        left: 6rem;
+    }
+    .overlay {
+        position: fixed;
+        justify-content: center;
+        top: 7.3rem;
+        left: 15rem;
+        display: none;
+        width: 60rem;
+        height: 33rem;
+    }
+    .overlay2 {
+        position: fixed;
+        justify-content: center;
+        top: 7.3rem;
+        left: 15rem;
+        display: none;
+        width: 60rem;
+        height: 33rem;
+    }
+    .overlay3 {
+        position: fixed;
+        justify-content: center;
+        top: 7.3rem;
+        left: 15rem;
+        display: none;
+        width: 60rem;
+        height: 33rem;
+    }
+    .overlay4 {
+        position: fixed;
+        justify-content: center;
+        top: 7.3rem;
+        left: 15rem;
+        display: none;
+        width: 60rem;
+        height: 33rem;
+    }
+    .overlay5 {
+        position: fixed;
+        justify-content: center;
+        top: 7.3rem;
+        left: 15rem;
+        display: none;
+        width: 60rem;
+        height: 33rem;
+    }
+    .zoomed {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        padding-left: 2rem;
+        transform: scale(0.88);
+        z-index: 1000;
     }
     .card2 {
         position: absolute;
         overflow: hidden;
-        top: 19rem;
+        top: 17rem;
         left: 27rem;
         background-color: var(--bkg-color2);
         width: 400px;
-        height: 250px;
+        height: 260px;
         margin: 1rem;
         margin-left: 5rem;
         border-radius: 15px;
@@ -2136,26 +2313,29 @@ body.dark-theme {
     .card2:active{
         overflow: visible;
     }
-    .card2 .img2 {
-        width: 100%;
-        height: 200px;
-        transition: transform 0.3s ease;
+    .card2 .imageContainer {
+        width: 400px;
+        overflow: hidden;
+        cursor: pointer;
     }
-    .card2 .img2:hover {
-        transform: scale(1.03);
+    .card2 .images .img1 {
+        width: 400px;
+        height: 220px;
     }
-    .card2 .img2:active {
-        transform: scale(2);
-        position: relative;
-        bottom: 20%;
-        z-index: 101;
+    .card2 .images .img2 {
+        width: 400px;
+        height: 220px;
+    }
+    .card2 .images .img3 {
+        width: 400px;
+        height: 220px;
     }
     .card2 .description {
         position: relative;
         font-size: 16px;
         margin: 2rem;
         margin-bottom: 0rem;
-        bottom: 1.5rem;
+        bottom: 3.5rem;
         color: var(--text-color2);
     }
     .card2 h3 {
@@ -2164,24 +2344,67 @@ body.dark-theme {
         justify-content: center;
         font-size: 20px;
         left: 2rem;
-        bottom: .5rem;
+        bottom: 2.2rem;
         color: var(--text-color2);
     }
     .card2 .githubImg {
         position: relative;
         width: 80px;
-        bottom: 1rem;
+        bottom: 3.5rem;
         left: 20rem;
         filter: var(--githubImg1);
+    }
+    .card2 .buttonsContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom: 0.8rem;
+        left: 6rem;
+    }
+    .card2 .overlay {
+        position: fixed;
+        justify-content: center;
+        top: 7.3rem;
+        left: 15rem;
+        display: none;
+        width: 60rem;
+        height: 33rem;
+    }
+    .card2 .overlay2 {
+        position: fixed;
+        justify-content: center;
+        top: 7.3rem;
+        left: 15rem;
+        display: none;
+        width: 60rem;
+        height: 33rem;
+    }
+    .card2 .overlay3 {
+        position: fixed;
+        justify-content: center;
+        top: 7.3rem;
+        left: 15rem;
+        display: none;
+        width: 60rem;
+        height: 33rem;
+    }
+    .card2 .zoomed {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        padding-left: 2rem;
+        transform: scale(0.88);
+        z-index: 1000;
     }
     .card3 {
         position: absolute;
         overflow: hidden;
-        top: 19rem;
+        top: 17rem;
         left: 54rem;
         background-color: var(--bkg-color2);
         width: 400px;
-        height: 250px;
+        height: 260px;
         margin: 1rem;
         margin-left: 5rem;
         border-radius: 15px;
@@ -2191,29 +2414,35 @@ body.dark-theme {
     .card3:hover{
         height: 420px;
     }
-    .card3 .img3 {
-        width: 100%;
-        height: 200px;
-        transition: transform 0.3s ease;
+    .card3 .imageContainer {
+        width: 400px;
+        overflow: hidden;
+        cursor: pointer;
     }
-    .card3 .img3:active {
-        transform: scale(2);
-        position: relative;
-        bottom: 20%;
-        z-index: 101;
+    .card3 .images {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    .card3 .images .img1 {
+        width: 400px;
+        height: 220px;
+    }
+    .card3 .images .img2 {
+        width: 400px;
+        height: 220px;
     }
     .card3 .description {
         position: relative;
         font-size: 16px;
         margin: 2rem;
         margin-bottom: 0rem;
-        bottom: 1.5rem;
+        bottom: 3.5rem;
         color: var(--text-color2);
     }
     .card3 .githubImg {
         position: relative;
         width: 80px;
-        bottom: 1rem;
+        bottom: 3.5rem;
         left: 20rem;
         filter: var(--githubImg1)
     }
@@ -2223,10 +2452,43 @@ body.dark-theme {
         justify-content: center;
         font-size: 20px;
         left: 2rem;
-        bottom: 0.5rem;
+        bottom: 2.2rem;
         color: var(--text-color2);
     }
-
+    .card3 .buttonsContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom: 0.8rem;
+        left: 6rem;
+    }
+    .card3 .overlay {
+        position: fixed;
+        justify-content: center;
+        top: 7.3rem;
+        left: 15rem;
+        display: none;
+        width: 60rem;
+        height: 33rem;
+    }
+    .card3 .overlay2 {
+        position: fixed;
+        justify-content: center;
+        top: 7.3rem;
+        left: 15rem;
+        display: none;
+        width: 60rem;
+        height: 33rem;
+    }
+    .card3 .zoomed {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        padding-left: 2rem;
+        transform: scale(0.88);
+        z-index: 1000;
+    }
     .sections .resumeLink {
         display: flex;
         align-items: center;
