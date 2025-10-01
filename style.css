@@ -1180,6 +1180,61 @@ body.dark-theme {
     bottom: 30%;
     z-index: 101;
 }
+/* .card3 .imageContainer {
+    width: 700px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.card3 .images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.card3 .images .img3 {
+    width: 700px;
+    height: 400px;
+}
+.card3 .images .img2 {
+    width: 700px;
+    height: 400px;
+} */
+/* .card3 .next {
+    position: relative;
+    border: none;
+    width: 4rem;
+    background-color: var(--bkg-color3);
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 18px;
+    top: 0.4rem;
+    left: 5rem;
+    cursor: pointer;
+    z-index: 100;
+}
+.card3 .next:hover {
+    transform: scale(1.2);
+}
+.card3 .next:active{
+    transform: scale(0.9);
+}
+.card3 .prev {
+    position: relative;
+    border: none;
+    width: 4rem;
+    background-color: var(--bkg-color3);
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 18px;
+    top: 0.4rem;
+    right: 5rem;
+    cursor: pointer;
+    z-index: 100;
+}
+.card3 .prev:hover {
+    transform: scale(1.2);
+}
+.card3 .prev:active{
+    transform: scale(0.9);
+} */
 .card3 .description {
     position: relative;
     font-size: 22px;
@@ -1210,6 +1265,54 @@ body.dark-theme {
     bottom: 1rem;
     color: var(--text-color2);
 }
+/* .card3 .overlay {
+    position: fixed;
+    justify-content: center;
+    top: 9rem;
+    left: 34rem;
+    display: none;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+    width: 78rem;
+    height: 42rem;
+}
+.card3 .overlay2 {
+    position: fixed;
+    justify-content: center;
+    top: 9rem;
+    left: 34rem;
+    display: none;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+    width: 78rem;
+    height: 42rem;
+}
+.card3 .zoomed {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding-left: 2rem;
+    transform: scale(0.90);
+    z-index: 1000;
+}
+.card3 .closeBtn {
+    display: flex;
+    position: relative;
+    font-size: 2rem;
+    right: 4rem;
+    bottom: -0.4rem;
+    background: none;
+    border: none;
+    z-index: 10000;
+    color: var(--text-color);
+    cursor: pointer;
+}
+.card3 .closeBtn:hover {
+    background-color: red;
+    height: 2rem;
+} */
 
 
 /* 

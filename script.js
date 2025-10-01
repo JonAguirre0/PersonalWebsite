@@ -64,6 +64,13 @@ nextBtn.addEventListener('click', () => {
     changeImage()
 })
 
+// document.querySelectorAll('.next').forEach(nextBtn => {
+//     nextBtn.addEventListener('click', () => {
+//         idx++
+//         changeImage()
+//     })
+// })
+
 prevBtn.addEventListener('click', () => {
     idx--
     changeImage()
