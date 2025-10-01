@@ -19,7 +19,6 @@
     --githubImg1: invert(1);
     --restapi: invert(0);
     --express: invert(0);
-    /* --boxshadow: 0 4px 10px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     --boxshadow: 0px 5px 10px 2px rgba(0,0,0,0.5);
 }
 
@@ -46,7 +45,6 @@ body.dark-theme {
     --githubImg1: invert(0);
     --restapi: invert(1);
     --express: invert(1);
-    /* --boxshadow: 0 4px 10px 2px rgba(255,255,255, 0.2), 0 6px 20px 0 rgba(255,255,255, 0.19); */
     --boxshadow: 0px 5px 10px 2px rgba(255,255,255,0.5);
 }
 
@@ -88,9 +86,7 @@ body.dark-theme {
     position: relative;
     align-items: center;
     justify-content: center;
-    /* width: 7rem; */
     width: 3rem;
-    /* height: 1.8rem; */
     height: 2rem;
     font-family: var(--font1);
     font-size: 1.1rem;
@@ -915,9 +911,6 @@ body.dark-theme {
     overflow: hidden;
     cursor: pointer;
 }
-/* .imageContainer:active {
-    overflow: visible;
-} */
 .images {
     display: flex;
     transition: transform 0.5s ease-in-out;
@@ -951,6 +944,9 @@ body.dark-theme {
     cursor: pointer;
 } */
 .card .img1:hover {
+    transform: scale(1.03);
+}
+.card .img2:hover {
     transform: scale(1.03);
 }
 /* .images .img1:active{
@@ -1009,14 +1005,12 @@ body.dark-theme {
     margin: 2rem;
     margin-bottom: 0rem;
     bottom: 3rem;
-    /* bottom: 28rem; */
     color: var(--text-color2);
 }
 .card .githubImg {
     position: relative;
     width: 5rem;
     bottom: 4rem;
-    /* bottom: 29rem; */
     left: 38.4rem;
     filter: var(--githubImg1);
 }
@@ -1033,15 +1027,12 @@ body.dark-theme {
     font-size: 25px;
     left: 2rem;
     bottom: 2rem;
-    /* bottom: 27.4rem; */
     color: var(--text-color2);
 }
 .overlay {
     position: fixed;
     justify-content: center;
-    /* top: 30rem; */
     top: 9rem;
-    /* left: 80rem; */
     left: 34rem;
     display: none;
     z-index: 999;
@@ -1053,9 +1044,7 @@ body.dark-theme {
 .overlay2 {
     position: fixed;
     justify-content: center;
-    /* top: 30rem; */
     top: 9rem;
-    /* left: 80rem; */
     left: 34rem;
     display: none;
     z-index: 999;
@@ -1067,9 +1056,7 @@ body.dark-theme {
 .overlay3 {
     position: fixed;
     justify-content: center;
-    /* top: 30rem; */
     top: 9rem;
-    /* left: 80rem; */
     left: 34rem;
     display: none;
     z-index: 999;
@@ -1081,9 +1068,7 @@ body.dark-theme {
 .overlay4 {
     position: fixed;
     justify-content: center;
-    /* top: 30rem; */
     top: 9rem;
-    /* left: 80rem; */
     left: 34rem;
     display: none;
     z-index: 999;
@@ -1095,9 +1080,7 @@ body.dark-theme {
 .overlay5 {
     position: fixed;
     justify-content: center;
-    /* top: 30rem; */
     top: 9rem;
-    /* left: 80rem; */
     left: 34rem;
     display: none;
     z-index: 999;
