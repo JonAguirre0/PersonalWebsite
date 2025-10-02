@@ -6,6 +6,8 @@
     --text-color2: white;
     /* --bkg-color: white; */
     --bkg-color: #f6f5f0;
+    /* --bkg-color:linear-gradient(to right, #d7d2cc 0%, #304352 100%); */
+    /* --bkg-color: linear-gradient(to right, #e6dada, #274046); */
     --bkg-color2: black;
     --bkg-color3: #DDDCD8;
     --font1: "Electrolize";
@@ -29,12 +31,16 @@
 body {
     font-family: var(--font1);
     margin: 0;
-    background-color: var(--bkg-color);
+    /* background-color: var(--bkg-color); */
+    background-image: var(--bkg-color);
+    background: var(--bkg-color);
 }
 body.dark-theme {
     --text-color: white;
     --text-color2: black;
-    --bkg-color: black;
+    /* --bkg-color: black; */
+    --bkg-color: linear-gradient(to right, #434343 0%, black 100%);
+    /* --bkg-color: linear-gradient(to right, #434343 0%, black 100%); */
     --bkg-color2: white;
     --darkModeText: black;
     --darkModeBckg: rgb(219, 224, 113);
@@ -257,8 +263,8 @@ body.dark-theme {
     font-size: 2rem;
     padding: 0 8rem;
     overflow: hidden;
-    background: left 100%/20% 100% no-repeat url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdm5ndGdsbHpzcW5tcnNpbWZqd2E0a3FvczF3OXNmMG81ZHVwaHFkbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8w61HSu6xQjoa2NzKN/giphy.gif), right 100%/20% 100% no-repeat url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdm5ndGdsbHpzcW5tcnNpbWZqd2E0a3FvczF3OXNmMG81ZHVwaHFkbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8w61HSu6xQjoa2NzKN/giphy.gif);
-    /* background: center/contain repeat url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdm5ndGdsbHpzcW5tcnNpbWZqd2E0a3FvczF3OXNmMG81ZHVwaHFkbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8w61HSu6xQjoa2NzKN/giphy.gif); */
+    /* background: left 100%/20% 100% no-repeat url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdm5ndGdsbHpzcW5tcnNpbWZqd2E0a3FvczF3OXNmMG81ZHVwaHFkbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8w61HSu6xQjoa2NzKN/giphy.gif), right 100%/20% 100% no-repeat url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdm5ndGdsbHpzcW5tcnNpbWZqd2E0a3FvczF3OXNmMG81ZHVwaHFkbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8w61HSu6xQjoa2NzKN/giphy.gif); */
+    background: center/contain repeat url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdm5ndGdsbHpzcW5tcnNpbWZqd2E0a3FvczF3OXNmMG81ZHVwaHFkbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8w61HSu6xQjoa2NzKN/giphy.gif);
     /* background: center/50% no-repeat url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXV1eDFnZmNmeGpiNHd3bHl0M3hxbjJjOTdzZDA5NnZqcGRnMWdnbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WFjcyy95rUXPXo1k43/giphy.gif); */
     /* background: center/50% no-repeat url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnVrZmpsMDcwMHBwbTEyYnB1bTdnZndkOHBvbnZ4ZW9zMDIzdGVlNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8mz9YJidZMGXndg6eH/giphy.gif); */
     /* background: center/90% no-repeat url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2VlMWpxMDlzaWxlcXpocnRqdnFjYzA4NHVyZ2N6em8zZm5ydmE2biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oKIPeK7hRcDBwVFJu/giphy.gif); */
@@ -896,7 +902,7 @@ body.dark-theme {
     justify-content: center;
     color: var(--text-color);
     font-size: 2rem;
-    padding: 5rem 8rem;
+    padding: 5rem 0rem;
     margin: 0 20rem 0 20rem;
     flex-wrap: wrap;
 }
@@ -1457,6 +1463,7 @@ body.dark-theme {
     padding: 15rem 8rem;
     margin: 0 20rem 0 20rem;
     flex-wrap: wrap;
+    text-align:center;
 }
 .sections .resumeLink {
     display: flex;
