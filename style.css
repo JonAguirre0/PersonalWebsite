@@ -278,11 +278,30 @@ body.dark-theme {
     align-items: center;
     justify-content: center;
     top: 12rem;
+    margin-left: 17rem;
     font-size: 70px;
     font-weight: bold;
     margin-top: 9rem;
+    margin-right: 35rem;
+    user-select: none;
 }
 .sections .homeSection .homeTitle2 {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 12rem;
+    margin-left: 17rem;
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 9rem;
+    background: linear-gradient(45deg, #39FF14, #2BFD6A, #1DFBA1, #0FE9D8, #00D7FF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    user-select: none;
+}
+.sections .homeSection .homeTitle3 {
     display: flex;
     position: absolute;
     align-items: center;
@@ -291,6 +310,7 @@ body.dark-theme {
     font-size: 70px;
     font-weight: bold;
     margin-top: 9rem;
+    user-select: none;
 }
 .sections .homeSection .links {
     display: flex;
@@ -298,6 +318,7 @@ body.dark-theme {
     align-items: center;
     justify-content: center;
     margin-left: 11rem;
+    user-select: none;
 }
 .sections .homeSection .links .githubImg {
     width: 7rem;
