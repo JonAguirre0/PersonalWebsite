@@ -247,6 +247,7 @@ body.dark-theme {
     position: relative;
     align-items: center;
     justify-content: center;
+    top: 1rem;
     padding: 1.3rem 0;
     font-family: var(--font2);
     font-size: 3rem;
@@ -1458,10 +1459,12 @@ body.dark-theme {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     color: var(--text-color);
     font-size: 2rem;
     padding: 15rem 8rem;
     margin: 0 20rem 0 20rem;
+    bottom: 5rem;
     flex-wrap: wrap;
     text-align:center;
 }
