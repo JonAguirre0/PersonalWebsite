@@ -906,7 +906,6 @@ body.dark-theme {
     font-weight: bold;
     color: black;
     background-color: var(--bkg-color3);
-    top: rem;
     cursor: pointer;
 }
 .sections .projectsSection .links .githubBtn:hover{
@@ -987,27 +986,12 @@ body.dark-theme {
     width: 700px;
     height: 400px;
 }
-/* .card .img1 {
-    width: 100%;
-    height: 25rem;
-    transition: transform 0.3s ease;
-    position: relative;
-    z-index: 100;
-    cursor: pointer;
-} */
 .card .img1:hover {
     transform: scale(1.03);
 }
 .card .img2:hover {
     transform: scale(1.03);
 }
-/* .images .img1:active{
-    transform: scale(2);
-    position: relative;
-    left: 50rem;
-    bottom: 30%;
-    z-index: 100;
-} */
 .buttonsContainer {
     display: flex;
     justify-content: center;
@@ -1155,7 +1139,6 @@ body.dark-theme {
     font-size: 2rem;
     right: 4rem;
     bottom: -0.4rem;
-    /* background: none; */
     background: none;
     border: none;
     z-index: 10000;
@@ -1186,22 +1169,6 @@ body.dark-theme {
 .card2:active{
     overflow: visible;
 }
-/* .card2 .img2 {
-    width: 100%;
-    height: 25rem;
-    transition: transform 0.3s ease;
-    position: relative;
-    z-index: 100;
-    cursor: pointer;
-}
-.card2 .img2:hover {
-    transform: scale(1.03);
-}
-.card2 .img2:active {
-    transform: scale(2);
-    bottom: 30%;
-    z-index: 101;
-} */
 .card2 .imageContainer {
     width: 700px;
     overflow: hidden;
@@ -1307,23 +1274,6 @@ body.dark-theme {
 .card3:active{
     overflow: visible;
 }
-/* .card3 .img3 {
-    width: 100%;
-    height: 25rem;
-    transition: transform 0.3s ease;
-    position: relative;
-    z-index: 100;
-    cursor: pointer;
-}
-.card3 .img3:hover {
-    transform: scale(1.03);
-}
-.card3 .img3:active {
-    transform: scale(2);
-    left: -100%;
-    bottom: 30%;
-    z-index: 101;
-} */
 .card3 .imageContainer {
     width: 700px;
     overflow: hidden;
@@ -1480,9 +1430,6 @@ body.dark-theme {
     height: 100vh;
     margin-top: 0rem;
     overflow: hidden;
-    /* background-image: url("./images/image7.jpg");
-    background-size: 104%;
-    background-repeat: no-repeat; */
 }
 .sections .aboutText {
     display: flex;
