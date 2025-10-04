@@ -5,8 +5,8 @@
     --text-color: black;
     --text-color2: white;
     /* --bkg-color: white; */
-    --bkg-color: #f6f5f0;
-    /* --bkg-color:linear-gradient(to right, #d7d2cc 0%, #304352 100%); */
+    /* --bkg-color: #f6f5f0; */
+    --bkg-color:linear-gradient(to right, #d7d2cc 0%, #304352 100%);
     /* --bkg-color: linear-gradient(to right, #e6dada, #274046); */
     --bkg-color2: black;
     --bkg-color3: #DDDCD8;
@@ -90,6 +90,12 @@ body.dark-theme {
     /* below is one option */
     /* position: relative;
     left: 30rem; */
+    background: linear-gradient(45deg, #39FF14, #2BFD6A, #1DFBA1, #0FE9D8, #00D7FF);
+    background-size: 17rem;
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .nav .darkmode {
     display: flex;
@@ -278,11 +284,11 @@ body.dark-theme {
     align-items: center;
     justify-content: center;
     top: 12rem;
-    margin-left: 17rem;
-    font-size: 70px;
+    margin-left: 19rem;
+    font-size: 90px;
     font-weight: bold;
     margin-top: 9rem;
-    margin-right: 35rem;
+    margin-right: 45rem;
     user-select: none;
 }
 .sections .homeSection .homeTitle2 {
@@ -291,8 +297,8 @@ body.dark-theme {
     align-items: center;
     justify-content: center;
     top: 12rem;
-    margin-left: 17rem;
-    font-size: 70px;
+    margin-left: 19rem;
+    font-size: 90px;
     font-weight: bold;
     margin-top: 9rem;
     background: linear-gradient(45deg, #39FF14, #2BFD6A, #1DFBA1, #0FE9D8, #00D7FF);
@@ -307,7 +313,7 @@ body.dark-theme {
     align-items: center;
     justify-content: center;
     top: 19rem;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: bold;
     margin-top: 9rem;
     user-select: none;
@@ -922,11 +928,13 @@ body.dark-theme {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     color: var(--text-color);
     font-size: 2rem;
-    padding: 5rem 0rem;
+    padding: 5rem 15rem;
     margin: 0 20rem 0 20rem;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 
