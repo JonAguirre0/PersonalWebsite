@@ -124,7 +124,6 @@ document.querySelectorAll('.card, .card2, .card3').forEach(card => {
         changeImage();
     });
 
-  // Show overlay when image is clicked
     imgs.forEach((img, i) => {
         img.addEventListener('click', () => {
             if (overlays[i]) {
