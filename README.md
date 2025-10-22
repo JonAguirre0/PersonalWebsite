@@ -5,4 +5,4 @@
 * script.js : This file contains the JavaScript code for the apps functionality. 
 * images Folder : This folder contains the images which are used in the README, icon, and on the project itself.
 
-![] (./images/image17.png)
+![](./images/image17.png)
