@@ -1,3 +1,6 @@
+# Getting Started
+Personal Website showcasing an overview of my skills, resume, and projects.
+
 # Files
 
 * index.html : This file contains the HTML code for the app.
