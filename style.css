@@ -34,7 +34,7 @@ body {
     /* background-color: var(--bkg-color); */
     background-image: var(--bkg-color);
     background: var(--bkg-color);
-    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    padding: env(safe-area-inset-top,0) env(safe-area-inset-right,0) env(safe-area-inset-bottom,0) env(safe-area-inset-left,0);
 }
 body.dark-theme {
     --text-color: white;
