@@ -34,6 +34,7 @@ body {
     /* background-color: var(--bkg-color); */
     background-image: var(--bkg-color);
     background: var(--bkg-color);
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 body.dark-theme {
     --text-color: white;
@@ -2498,6 +2499,9 @@ body.dark-theme {
 }
 
 @media (max-width: 480px) {
+    body{
+        padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    }
     .nav {
         display: flex;
         flex-direction: column;
